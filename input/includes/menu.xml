@@ -1,0 +1,24 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="concepts.html">Concepts</a></li>
+      <li><a href="generic-personas.html">Generic Personas</a></li>
+      <li><a href="user-scenarios.html">User Scenarios</a></li>
+      <li><a href="business-processes.html">Business Processes</a></li>
+    </ul>
+  </li>
+
+    <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+    </ul>
+  </li>
