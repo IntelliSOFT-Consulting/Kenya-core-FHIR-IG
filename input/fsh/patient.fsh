@@ -4,7 +4,14 @@
 Profile: MyPatient
 Parent: Patient
 Description: "An example profile of the Patient resource."
+* identifier 0..*
+* active 0..1
 * name 1..* MS
+* birthDate 0..0
+* telecom 0..0
+* gender 0..1
+
+
 
 Instance: PatientExample
 InstanceOf: MyPatient
