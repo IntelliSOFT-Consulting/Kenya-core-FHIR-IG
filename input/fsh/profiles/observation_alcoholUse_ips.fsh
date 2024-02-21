@@ -4,9 +4,9 @@ Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $Quantity-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips
 
-Profile: Kenyan-ObservationAlcoholUseIPS
+Profile: KeCoreObservationAlcoholUseIPS
 Parent: Observation
-Id: KenyanObservation-alcoholuse-ips
+Id: ke-core-observation-alcoholuse
 Title: "Observation - SH: alcohol use"
 Description: "This profile constrains the Observation resource to represent alcohol use assessment in a patient summary."
 * ^url = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"

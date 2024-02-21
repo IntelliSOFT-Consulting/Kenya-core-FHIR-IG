@@ -5,3 +5,6 @@ Thumbs.db
 /output
 /temp
 /template
+
+# IDEs
+.idea

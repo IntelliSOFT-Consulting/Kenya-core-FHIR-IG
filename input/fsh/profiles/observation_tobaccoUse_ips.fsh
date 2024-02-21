@@ -4,9 +4,9 @@ Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $current-smoking-status-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips
 
-Profile: Kenyan-ObservationTobaccoUseIPS
+Profile: KeCoreObservationTobaccoUseIPS
 Parent: Observation
-Id: KenyanObservation-tobaccouse-ips
+Id: Ke-core-observation-tobaccouse
 Title: "Observation - SH: tobacco use"
 Description: "This profile constrains the Observation resource to represent Tobacco use assessment in a patient summary."
 * ^url = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"
