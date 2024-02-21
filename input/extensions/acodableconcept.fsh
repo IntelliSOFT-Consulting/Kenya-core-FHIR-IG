@@ -1,5 +1,4 @@
 Alias: $Coding-uv-ips = http://example.org/StructureDefinition/Coding-uv-ips
-
 Profile: CodeableConceptIPS
 Parent: CodeableConcept
 Id: CodeableConcept-uv-ips
