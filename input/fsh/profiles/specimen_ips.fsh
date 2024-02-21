@@ -1,4 +1,4 @@
-Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
+Alias: $KenyaCodeableConcept-uv-ips = http://example.org/StructureDefinition/CodeableConcept-uv-ips
 Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
 Alias: $results-specimen-type-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-type-uv-ips
 Alias: $body-site-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips
@@ -27,8 +27,8 @@ Description: "This profile constrains the Specimen resource to represent the cha
 * type ^binding.extension[=].valueString = "SpecimenType"
 // * subject only Reference($Patient-uv-ips)
 * subject.reference 1..
-// * collection.method only $CodeableConcept-uv-ips
+* collection.method only $KenyaCodeableConcept-uv-ips
 * collection.method from FHIRSpecimenCollectionMethod (preferred)
-// * collection.bodySite only $CodeableConcept-uv-ips
+* collection.bodySite only $KenyaCodeableConcept-uv-ips
 * collection.bodySite from $body-site-uv-ips (preferred)
 // * collection.fastingStatus[x] only $CodeableConcept-uv-ips or Duration
