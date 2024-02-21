@@ -2,7 +2,7 @@
 Profile: KenyaPatientIps
 Parent: Patient
 Id: Kenya-patient-ips
-Title: "Patient (IPS)"
+Title: "Kenya Patient Summary (KPS)"
 Description: "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #pc
