@@ -15,5 +15,7 @@ Description: "Standardise the format of the coverage status."
 * beneficiary ^definition = "The actual patient covered, who may not be the same as the principal member / family head."
 * relationship 1..1
 * period  1..1
+* network MS
 //* insurer only Reference($Kenya-organization-ips)
+//* class 0..* BackboneElement "Additional coverage classifications"
 
