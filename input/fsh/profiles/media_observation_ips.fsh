@@ -1,5 +1,5 @@
 Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
-Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+Alias: $Patient-ips = http://example.org/StructureDefinition/Kenya-patient-ips
 
 Profile: KenyaMediaObservationUvIps
 Parent: Media
@@ -16,6 +16,6 @@ Description: "This profile constrains the Media resource (which is a specialized
 * status ^definition = "The status of the result value. Only final observations are eligible to be included in the international patient summary."
 //* type only $CodeableConcept-uv-ips
 * subject 1..
-//* subject only Reference($Patient-uv-ips)
+* subject only Reference($Patient-ips)
 * subject.reference 1..
 
