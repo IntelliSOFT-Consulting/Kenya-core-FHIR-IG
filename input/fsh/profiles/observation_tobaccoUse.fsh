@@ -4,7 +4,7 @@ Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $current-smoking-status-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips
 
-Profile: KenyaObservationTobaccoUseKPS
+Profile: KenyaObservationTobaccoUseKePS
 Parent: Observation
 Id: KenyanObservation-tobaccouse-ips
 Title: "Observation - SH: tobacco use"

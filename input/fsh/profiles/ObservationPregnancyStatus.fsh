@@ -5,7 +5,7 @@ Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent
 Alias: $Observation-pregnancy-edd-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips
 Alias: $pregnancy-status-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips
 
-Profile: KenyaObservationPregnancyStatusUvKPS
+Profile: KenyaObservationPregnancyStatusKePS
 Parent: Observation
 Id: Kenya-Observation-pregnancy-status-ips
 Title: "Observation - Pregnancy: status"

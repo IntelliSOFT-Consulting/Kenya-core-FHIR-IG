@@ -7,7 +7,7 @@ Alias: $medicine-active-substances-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/
 Profile: KenyanMedicationIPS
 Parent: Medication
 Id: Kenyan-medication-ips
-Title: "Medication (IPS)"
+Title: "Medication (KePS)"
 Description: "This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile."
 * ^experimental = false
 * ^status = #active

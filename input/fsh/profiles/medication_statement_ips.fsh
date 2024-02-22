@@ -8,7 +8,7 @@ Alias: $medicine-route-of-administration = http://hl7.org/fhir/uv/ips/ValueSet/m
 Profile: MedicationStatementIPS
 Parent: MedicationStatement
 Id: MedicationStatement-uv-ips
-Title: "Medication Statement (IPS)"
+Title: "Medication Statement (KePS)"
 Description: "This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile."
 * ^publisher = "HL7 International"
 * ^purpose = "This profile constrains the representation of a medication statement related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."

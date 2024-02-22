@@ -3,7 +3,7 @@ Alias: $Patient-ips = http://example.org/StructureDefinition/Kenya-patient-ips
 Profile: KenyaAllergyIntoleranceIps
 Parent: AllergyIntolerance
 Id: AllergyIntolerance-uv-ips
-Title: "Allergy Intolerance (IPS)"
+Title: "Allergy Intolerance (KePS)"
 Description: """This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.
 
 It documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy."""
