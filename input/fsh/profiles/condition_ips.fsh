@@ -7,7 +7,7 @@ Alias: $problems-snomed-absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/Value
 Profile: ConditionUvIps
 Parent: Condition
 Id: Condition-uv-ips
-Title: "Condition (KePS)"
+Title: "Condition (IPS)"
 Description: "This profile represents the constraints applied to the Condition resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of a problem is represented in the patient summary as an instance of the Condition resource constrained by this profile."
 * ^purpose = "Representation of a problem in the international patient summary"
 * ^publisher = "HL7 International"
