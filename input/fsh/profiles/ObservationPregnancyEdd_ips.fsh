@@ -1,5 +1,5 @@
 Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
-Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+Alias: $Patient-ips = http://example.org/StructureDefinition/Kenya-patient-ips
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $edd-method-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/edd-method-uv-ips
 
@@ -16,7 +16,7 @@ Description: "This profile constrains the Observation resource to represent the 
 * code ^binding.extension.valueString = "ObservationCode"
 * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * subject 1.. MS
-// * subject only Reference($Patient-uv-ips)
+* subject only Reference($Patient-ips)
 * subject.reference 1.. MS
 * effective[x] 1..1 MS
 * effective[x] only dateTime

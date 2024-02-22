@@ -1,6 +1,6 @@
 Alias: $loinc = http://loinc.org
 Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
-Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+Alias: $Patient-ips = http://example.org/StructureDefinition/Kenya-patient-ips
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $Observation-pregnancy-edd-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips
 Alias: $pregnancy-status-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips
@@ -16,7 +16,7 @@ Description: "This profile constrains the Observation resource to represent the 
 // * code only $CodeableConcept-uv-ips
 * code = $loinc#82810-3
 * subject 1.. MS
-// * subject only Reference($Patient-uv-ips)
+* subject only Reference($Patient-ips)
 * subject.reference 1.. MS
 * effective[x] 1..1 MS
 * effective[x] only dateTime
