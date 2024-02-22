@@ -4,7 +4,7 @@ Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $Quantity-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips
 
-Profile: KeCoreObservationAlcoholUseIPS
+Profile: KenyaObservationAlcoholUseKPS
 Parent: Observation
 Id: ke-core-observation-alcoholuse
 Title: "Observation - SH: alcohol use"
