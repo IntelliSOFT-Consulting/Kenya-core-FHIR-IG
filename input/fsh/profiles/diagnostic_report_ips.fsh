@@ -13,7 +13,7 @@ Alias: $Observation-results-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinit
 Profile: DiagnosticReportUvIps
 Parent: DiagnosticReport
 Id: DiagnosticReport-uv-ips
-Title: "DiagnosticReport (IPS)"
+Title: "DiagnosticReport (KePS)"
 Description: "This profile constrains the DiagnosticReport resource to represent diagnostic test and procedure reports in a patient summary."
 * ^purpose = "This profile constrains the DiagnosticReport resource to use the specific IPS profiles for observations and coded data types."
 * ^experimental = false
