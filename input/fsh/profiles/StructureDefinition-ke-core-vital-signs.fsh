@@ -57,12 +57,12 @@ Description: "To promote interoperability and adoption through common implementa
 * component.code MS
 * component.code from $ke-core-vital-signs-valueset (extensible)
 * component.code ^binding.description = "The vital sign codes from the base FHIR and KE Core Vital Signs."
-// * component.value[x] only Quantity or CodeableConcept or string or boolean or integer or Range or Ratio or SampledData or time or dateTime or Period
-// * component.value[x] MS
-// * component.value[x] from http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1 (extensible)
-// * component.value[x] ^short = "Vital Sign Component Value"
-// * component.value[x] ^definition = "Vital Signs value are typically recorded using the Quantity data type. For supporting observations such as cuff size could use other datatypes such as CodeableConcept."
-// * component.value[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-// * component.value[x] ^type.extension.valueBoolean = true
-// * component.value[x] ^binding.description = "Common UCUM units for recording Vital Signs."
+* component.value[x] only Quantity or CodeableConcept or string or boolean or integer or Range or Ratio or SampledData or time or dateTime or Period
+* component.value[x] MS
+* component.value[x] from http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1 (required) //TODO: check if the units are sufficient for all vital signs
+* component.value[x] ^short = "Vital Sign Component Value"
+* component.value[x] ^definition = "Vital Signs value are typically recorded using the Quantity data type. For supporting observations such as cuff size could use other datatypes such as CodeableConcept."
+* component.value[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* component.value[x] ^type.extension.valueBoolean = true
+* component.value[x] ^binding.description = "Common UCUM units for recording Vital Signs."
 * component.dataAbsentReason MS
