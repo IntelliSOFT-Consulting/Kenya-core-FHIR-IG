@@ -1,10 +1,10 @@
-CodeSystem:   NHDD.A
-Title:        "NHDD.A CodeSystem for Counties in Kenya"
-Description:  "CodeSystem for NHDD.A Counties in Kenya"
+CodeSystem:   KHTS.A
+Title:        "KHTS.A CodeSystem for Counties in Kenya"
+Description:  "CodeSystem for KHTS.A Counties in Kenya"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "NHDD_A"
+* ^name = "KHTS_A"
 * #C-001 "Mombasa" "County of Residence, Mombasa"
 * #C-002 "Kilifi" "County of Residence, Kilifi"
 * #C-003 "Tana River	Hola" "County of Residence, Tana River	Hola"
