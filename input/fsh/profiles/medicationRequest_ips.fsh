@@ -6,7 +6,7 @@ Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent
 Alias: $medication-snomed-absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips
 Alias: $medicine-route-of-administration = http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration
 
-Profile: Kenyan-medicationRequestIPS
+Profile: KenyamedicationRequestKPS
 Parent: MedicationRequest
 Id: KenyanMedicationRequest-ips
 Title: "Medication Request (IPS)"
