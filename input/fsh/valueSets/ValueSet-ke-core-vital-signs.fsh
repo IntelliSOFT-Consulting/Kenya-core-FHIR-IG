@@ -1,6 +1,6 @@
 ValueSet: KeCoreVitalSigns
 Id: ke-core-vital-signs
-Title: "KE Core Vital Signs ValueSet(Sample)"
+Title: "Vital Signs ValueSet"
 Description: "The vital sign codes from the base FHIR and KE Core Vital Signs."
 * ^url = "http://example.org/ValueSet/ke-core-vital-signs" 
 * ^status = #active
