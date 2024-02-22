@@ -3,7 +3,7 @@ Alias: $Patient-ips = http://example.org/StructureDefinition/Kenya-patient-ips
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $edd-method-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/edd-method-uv-ips
 
-Profile: KenyaObservationPregnancyEddKPS
+Profile: KenyaObservationPregnancyEddKePS
 Parent: Observation
 Id: Kenya-Observation-pregnancy-edd-ips
 Title: "Observation - Pregnancy: EDD"

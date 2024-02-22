@@ -9,7 +9,7 @@ Alias: $medicine-route-of-administration = http://hl7.org/fhir/uv/ips/ValueSet/m
 Profile: KenyamedicationRequestKPS
 Parent: MedicationRequest
 Id: KenyanMedicationRequest-ips
-Title: "Medication Request (IPS)"
+Title: "Medication Request (KePS)"
 Description: "This profile represents the constraints applied to the MedicationRequest resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication request is represented in the patient summary as an instance of a MedicationRequest resource constrained by this profile."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-category"
 * ^extension[=].valueString = "Clinical.Medications"
