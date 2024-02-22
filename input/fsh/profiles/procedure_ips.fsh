@@ -1,4 +1,4 @@
-Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+Alias: $Patient-ips = http://example.org/StructureDefinition/Kenya-patient-ips
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $Device-observer-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips
 Alias: $Practitioner-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips
@@ -6,7 +6,7 @@ Alias: $PractitionerRole-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition
 Alias: $Organization-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips
 Alias: $procedures-snomed-absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-absent-unknown-uv-ips
 
-Profile: KenyProcedureIps
+Profile: KenyaProcedureIps
 Parent: Procedure
 Id: kenya-device-ips
 Title: "Procedure (IPS)"
