@@ -15,3 +15,13 @@ Description: "Standardise the format of electronic claims / pre-authorizations /
 * identifier 1..1 MS 
 * status from ClaimsStatusVS
 * status ^short = "Patient Claim's status"
+* type MS  
+* subType MS
+* billablePeriod MS
+* enterer MS  
+* insurer MS  
+* provider MS  
+* referral MS  
+* facility MS  
+* careTeam MS  
+ 
