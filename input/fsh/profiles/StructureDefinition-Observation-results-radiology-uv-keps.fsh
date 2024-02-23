@@ -47,62 +47,6 @@ It allows also providing details about the related study using the partOf elemen
 * device only Reference($Device-observer-uv-keps)
 * hasMember only Reference(ObservationResultsRadiologyUvKeps or $Observation-results-uv-keps)
 * component MS
-// * component ^slicing.description = "Slicing based on value[x] type."
-// * component ^slicing.discriminator.type = #type
-// * component ^slicing.discriminator.path = "value"
-// * component ^slicing.rules = #closed
-// * component ^requirements = "Required if not(exists(Observation.valueString))"
-// * component ^min = 0
-// * component[observationText] ^sliceName = "observationText"
-// * component[observationText] ^short = "Observation Text"
-// * component[observationText].code only CodeableConcept
-// * component[observationText].code from $results-radiology-txtobs-snomed-dicom-loinc-uv-keps (extensible)
-// * component[observationText].code ^binding.extension.valueString = "ObservationCode"
-// * component[observationText].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-// * component[observationText].value[x] 1..
-// * component[observationText].value[x] only string
-// * component[observationCode] ^sliceName = "observationCode"
-// * component[observationCode] ^short = "Observation Code"
-// * component[observationCode].code only CodeableConcept
-// * component[observationCode].code from $results-radiology-observations-uv-keps (extensible)
-// * component[observationCode].value[x] 1..
-// * component[observationCode].value[x] only CodeableConcept
-// * component[numericQuantityMeasurement] ^sliceName = "numericQuantityMeasurement"
-// * component[numericQuantityMeasurement] ^short = "Observation Measurement, including linear, area and volume quantity measurements"
-// * component[numericQuantityMeasurement].code only CodeableConcept
-// * component[numericQuantityMeasurement].code from $results-radiology-numobs-snomed-dicom-uv-keps (extensible)
-// * component[numericQuantityMeasurement].code ^binding.description = "Codes identifying numeric measurements"
-// * component[numericQuantityMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
-// * component[numericQuantityMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-// * component[numericQuantityMeasurement].value[x] 1..
-// * component[numericQuantityMeasurement].value[x] only $Quantity-uv-ips
-// * component[numericRangeMeasurement] ^sliceName = "numericRangeMeasurement"
-// * component[numericRangeMeasurement] ^short = "Observation Measurement, including linear, area and volume range measurements"
-// * component[numericRangeMeasurement].code only CodeableConcept
-// * component[numericRangeMeasurement].code from $results-radiology-numobs-snomed-dicom-uv-keps (extensible)
-// * component[numericRangeMeasurement].code ^binding.description = "Codes identifying numeric measurements"
-// * component[numericRangeMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
-// * component[numericRangeMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-// * component[numericRangeMeasurement].value[x] 1..
-// * component[numericRangeMeasurement].value[x] only $Range-uv-keps
-// * component[numericRatioMeasurement] ^sliceName = "numericRatioMeasurement"
-// * component[numericRatioMeasurement] ^short = "Observation Measurement, including linear, area and volume ratio measurements"
-// * component[numericRatioMeasurement].code only CodeableConcept
-// * component[numericRatioMeasurement].code from $results-radiology-numobs-snomed-dicom-uv-keps (extensible)
-// * component[numericRatioMeasurement].code ^binding.description = "Codes identifying numeric measurements"
-// * component[numericRatioMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
-// * component[numericRatioMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-// * component[numericRatioMeasurement].value[x] 1..
-// * component[numericRatioMeasurement].value[x] only $Ratio-uv-ips
-// * component[numericSampledDataMeasurement] ^sliceName = "numericSampledDataMeasurement"
-// * component[numericSampledDataMeasurement] ^short = "Observation Measurement, including linear, area and volume sampled data measurements"
-// * component[numericSampledDataMeasurement].code only CodeableConcept
-// * component[numericSampledDataMeasurement].code from $results-radiology-numobs-snomed-dicom-uv-keps (extensible)
-// * component[numericSampledDataMeasurement].code ^binding.description = "Codes identifying numeric measurements"
-// * component[numericSampledDataMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
-// * component[numericSampledDataMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-// * component[numericSampledDataMeasurement].value[x] 1..
-// * component[numericSampledDataMeasurement].value[x] only SampledData
 
 Invariant: hasMemberOrComponent
 Description: "component and hasMember are mutually exclusive"
