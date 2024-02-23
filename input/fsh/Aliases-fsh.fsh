@@ -2,13 +2,13 @@
 Alias: $Observation-results-uv-keps = http://example.org/StructureDefinition/Observation-results-uv-keps
 Alias: $imaging-study-uv-keps = http://example.org/StructureDefinition/imaging-study-uv-keps
 Alias: $Patient-uv-keps = http://example.org/StructureDefinition/Kenya-patient-ips
-Alias: $Range-uv-keps = http://example.org/StructureDefinition/Kenya-range-uv-keps
+Alias: $Range-uv-keps = http://example.org/StructureDefinition/Range-uv-keps
 Alias: $Practitioner-uv-keps = http://example.org/StructureDefinition/Practitioner-uv-keps
 Alias: $Organization-uv-keps = http://example.org/StructureDefinition/Organization-keps
 Alias: $PractitionerRole-uv-keps = http://example.org/StructureDefinition/PractitionerRole-uv-keps
 Alias: $Device-observer-uv-keps = http://example.org/StructureDefinition/Device-observer-uv-keps
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
-Alias: $SimpleQuantity-uv-keps = http://example.org/StructureDefinition/Kenya-simpleQuantity-uv-keps
+Alias: $SimpleQuantity-uv-keps = http://example.org/StructureDefinition/SimpleQuantity-uv-keps
 
 
 // KePS ValueSets
