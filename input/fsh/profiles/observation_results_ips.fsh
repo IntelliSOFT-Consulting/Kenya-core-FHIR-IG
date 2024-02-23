@@ -8,7 +8,7 @@ Alias: $Organization-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Org
 Profile: KenyaObservationResultsIps
 Parent: Observation
 Id: Observation-results-uv-ips
-Title: "Observation Results (KePS)"
+Title: "Observation Results (IPS)"
 Description: "This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary.  This is the base profile from which the other results profiles are derived."
 * ^experimental = false
 * ^publisher = "HL7 International"
