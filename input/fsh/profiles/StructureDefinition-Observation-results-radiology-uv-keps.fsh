@@ -1,21 +1,8 @@
-Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $Observation-results-uv-keps = http://example.org/StructureDefinition/Observation-results-uv-keps
-Alias: $imaging-study-uv-keps = http://example.org/StructureDefinition/imaging-study-uv-keps
-Alias: $Patient-uv-keps = http://example.org/StructureDefinition/Kenya-patient-ips
-Alias: $Range-uv-keps = http://example.org/StructureDefinition/Kenya-range-uv-keps
-Alias: $results-radiology-observations-uv-keps = http://example.org/ValueSet/kenya-results-radiology-observations-uv-keps
-Alias: $results-radiology-txtobs-snomed-dicom-loinc-uv-keps = http://example.org/ValueSet/results-radiology-txtobs-snomed-dicom-loinc-uv-keps
-Alias: $results-radiology-numobs-snomed-dicom-uv-keps = http://example.org/ValueSet/results-radiology-numobs-snomed-dicom-uv-keps
-Alias: $Practitioner-uv-keps = http://example.org/StructureDefinition/Practitioner-uv-keps
-Alias: $Organization-uv-keps = http://example.org/StructureDefinition/Organization-keps
-Alias: $PractitionerRole-uv-keps = http://example.org/StructureDefinition/PractitionerRole-uv-keps
-Alias: $Device-observer-uv-keps = http://example.org/StructureDefinition/Device-observer-uv-keps
-
 Profile: ObservationResultsRadiologyUvKeps
 Parent: $Observation-results-uv-keps
 Id: observation-results-radiology-uv-keps
 Title: "Observation Results: radiology (KePS)"
-Description: """This profile represents the constraints applied to the Observation resource by the KePs project, which specifies a radiology observation for the international patient summary based on the FHIR standard R4. 
+Description: """This profile represents the constraints applied to the Observation resource by the KePs project, which specifies a radiology observation based on the FHIR standard R4. 
 
 This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. 
 
@@ -60,12 +47,12 @@ It allows also providing details about the related study using the partOf elemen
 * device only Reference($Device-observer-uv-keps)
 * hasMember only Reference(ObservationResultsRadiologyUvKeps or $Observation-results-uv-keps)
 * component MS
-* component ^slicing.description = "Slicing based on value[x] type."
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "value"
-* component ^slicing.rules = #closed
-* component ^requirements = "Required if not(exists(Observation.valueString))"
-* component ^min = 0
+// * component ^slicing.description = "Slicing based on value[x] type."
+// * component ^slicing.discriminator.type = #type
+// * component ^slicing.discriminator.path = "value"
+// * component ^slicing.rules = #closed
+// * component ^requirements = "Required if not(exists(Observation.valueString))"
+// * component ^min = 0
 // * component[observationText] ^sliceName = "observationText"
 // * component[observationText] ^short = "Observation Text"
 // * component[observationText].code only CodeableConcept

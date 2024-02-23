@@ -1,6 +1,3 @@
-
-Alias: $results-radiology-observations-uv-ips = http://example.org/ValueSet/observation-results-radiology-uv-keps
-
 Profile: KenyaImagingStudyUvKeps
 Parent: ImagingStudy
 Id: imaging-study-uv-keps
@@ -18,7 +15,7 @@ Description: """This profile represents the constraints applied to the ImagingSt
 * started MS
 * procedureCode only CodeableConcept
 * procedureCode MS
-* procedureCode from $results-radiology-observations-uv-ips (extensible)
+* procedureCode from $results-radiology-observations-uv-keps (extensible)
 * procedureCode ^binding.extension.valueString = "ImagingProcedureCode"
 * procedureCode ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * reasonCode only CodeableConcept

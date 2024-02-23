@@ -1,5 +1,5 @@
 ValueSet: KenyaResultsRadiologyObservationUvKeps
-Id: kenya-results-radiology-observations-uv-keps
+Id: results-radiology-observations-uv-keps
 Title: "Results Radiology Observation - KePS"
 Description: """
  Value Set Definition: 

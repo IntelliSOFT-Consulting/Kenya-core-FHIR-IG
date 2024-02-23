@@ -1,5 +1,3 @@
-Alias: $SimpleQuantity-uv-keps = http://example.org/StructureDefinition/Kenya-simpleQuantity-uv-keps
-
 Profile: KenyaRangeIPS
 Parent: Range
 Id: Kenya-range-uv-keps

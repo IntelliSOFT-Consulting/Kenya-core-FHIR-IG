@@ -1,5 +1,3 @@
-Alias: $healthcare-professional-roles-uv-keps = http://example.org/ValueSet/healthcare-professional-roles-uv-keps
-
 Profile: PractitionerRoleUvKeps
 Parent: PractitionerRole
 Id: PractitionerRole-uv-keps
