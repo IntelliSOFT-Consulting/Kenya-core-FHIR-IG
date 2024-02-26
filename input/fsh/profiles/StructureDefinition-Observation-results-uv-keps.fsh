@@ -1,14 +1,7 @@
-Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
-Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
-Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
-Alias: $Practitioner-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips
-Alias: $PractitionerRole-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips
-Alias: $Organization-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips
-
-Profile: KenyaObservationResultsIps
+Profile: ObservationResultsKeps
 Parent: Observation
-Id: Observation-results-uv-ips
-Title: "Observation Results (IPS)"
+Id: Observation-results-uv-keps
+Title: "Observation Results (KePS)"
 Description: "This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary.  This is the base profile from which the other results profiles are derived."
 * ^experimental = false
 * ^publisher = "HL7 International"
