@@ -7,6 +7,8 @@ Description: "This profile represents the constraints applied to the Patient res
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #pc
 * identifier MS
+* identifier.type 1..1 MS
+* identifier.value 1..1 MS
 * name 1..* MS
 * name obeys ips-pat-1
 * name ^requirements = "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided"
@@ -17,8 +19,11 @@ Description: "This profile represents the constraints applied to the Patient res
 * name.given MS
 * name.given ^min = 0
 * telecom MS
+* telecom.system 1..1 MS
+* telecom.value 1..1 MS
 * gender MS
 * birthDate 1.. MS
+* maritalStatus 1..1 MS
 * address MS
 * contact.relationship 
 * generalPractitioner MS
