@@ -6,10 +6,10 @@ Alias: $PractitionerRole-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition
 Alias: $Organization-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips
 Alias: $procedures-snomed-absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-absent-unknown-uv-ips
 
-Profile: KenyaProcedureIps
-Parent: Procedure
-Id: kenya-device-ips
-Title: "Procedure (IPS)"
+Profile: KenyaProcedure
+Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips
+Id: kenya-procedure
+Title: "Procedure Profile"
 Description: "This profile represents the constraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard R4."
 * ^status = #active
 * code 1..1 MS

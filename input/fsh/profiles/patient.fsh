@@ -1,14 +1,15 @@
 
-Profile: KenyaPatientIps
-Parent: Patient
-Id: Kenya-patient-ips
-Title: "Patient (IPS)"
+Profile: KenyaPatient
+Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+Id: Kenya-patient
+Title: "Patient Profile"
 Description: "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #pc
 * identifier MS
 * identifier.type 1..1 MS
 * identifier.value 1..1 MS
+
 * name 1..* MS
 * name obeys ips-pat-1
 * name ^requirements = "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided"
@@ -18,9 +19,11 @@ Description: "This profile represents the constraints applied to the Patient res
 * name.family 0..1 MS
 * name.given MS
 * name.given ^min = 0
+
 * telecom MS
 * telecom.system 1..1 MS
 * telecom.value 1..1 MS
+
 * gender MS
 * birthDate 1.. MS
 * maritalStatus 1..1 MS
