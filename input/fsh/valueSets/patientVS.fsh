@@ -33,3 +33,19 @@ Description: "ValueSet for Condition Problem whether absent or Unknown using SNO
 * ^experimental = false
 * $SCT#261665006 "Unknown"
 * $SCT#2667000 "Absent"
+
+ValueSet: UnknownAbsentProcedureVS
+Id: unknown-absent-procedure-vs
+Title: "Procedure Absent or Unknown ValueSet"
+Description: "ValueSet for a Procedure whether absent or Unknown using SNOMED CT codes"
+* ^experimental = false
+* $SCT#69466000 "Unknown Procedure"
+* $SCT#2667000 "Absent"
+
+ValueSet: UnknownAbsentVaccineCodeVS
+Id: unknown-absent-vaccine-code-vs
+Title: "Vaccine Code Absent or Unknown ValueSet"
+Description: "ValueSet for  Vaccine Code whether absent or Unknown using SNOMED CT codes"
+* ^experimental = false
+* $SCT#410516002 "Known Absent"
+* $SCT#373068000 "Not Known"
