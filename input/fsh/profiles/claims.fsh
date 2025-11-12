@@ -1,27 +1,35 @@
-Alias: $kenya-counties-extension = http://example.org/StructureDefinition/kenya-counties-extension
-
-Profile: ClaimProfile
+Profile: KenyaClaims
 Parent: Claim
-Id: Claim-ke
-Title: "Claims"
+Id: kenya-claims
+Title: "Claims Profile"
 Description: "Standardise the format of electronic claims / pre-authorizations / pre-determinations."
-* ^status = #active
-* ^purpose = "This profile constrains the representation of a record of a vaccination of the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* ^extension.valueCode = #pc
-* . ^definition = "Describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party and may include vaccine reaction information and what vaccination protocol was followed"
+
 * extension contains
-    $kenya-counties-extension named county 0..1 
+    KenyaCountiesExtension named county 0..1 MS
+    
 * identifier 1..1 MS 
+
 * status from ClaimsStatusVS
 * status ^short = "Patient Claim's status"
-* type MS  
-* subType MS
-* billablePeriod MS
-* enterer MS  
-* insurer MS  
-* provider MS  
-* referral MS  
-* facility MS  
-* careTeam MS  
+
+* type 1..1 MS  
+
+* subType 0..1 MS
+
+* billablePeriod 0..1 MS
+
+* enterer 0..1 MS  
+
+* insurer 0..1 MS  
+* insurer only Reference(KenyaOrganization)
+
+* provider 1..1 MS
+
+* referral 0..1 MS  
+
+* facility 0..1 MS  
+
+* careTeam 0..* MS
+  * sequence 1..1
+  * sequence only positiveInt  
  

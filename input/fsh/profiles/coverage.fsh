@@ -1,19 +1,25 @@
-Alias: $Kenya-organization-ips = http://example.org/StructureDefinition/Kenya-organization-ips
-
-Profile: CoverageProfile
+Profile: KenyanCoverage
 Parent: Coverage
-Id: Coverage-ke
-Title: "Coverage"
-Description: "Standardise the format of the coverage status."
+Id: kenyan-coverage
+Title: "Coverage Profile"
+Description: "The Coverage profile is intended to provide the identifiers and descriptors of a specific insurance plan for a specific individual - essentially the insurance card information. This may alternately provide the individual or organization, selfpay, which will pay for products and services rendered."
 * identifier 1..1 MS
-* ^status = #active
+
+* status 1..1 MS
 * status from ClaimsStatusVS
-* subscriber only Reference($Patient-ips)
-* subscriber ^definition = "This will be the principal member / family head."
-* subscriberId MS
-* beneficiary only Reference($Patient-ips)
+
+* subscriber 1..1 MS
+* subscriber only Reference(KenyaPatient)
+  * ^definition = "This will be the principal member"
+
+* subscriberId 1..1 MS
+
+* beneficiary 1..1 MS
+* beneficiary only Reference(KenyaPatient)
 * beneficiary ^definition = "The actual patient covered, who may not be the same as the principal member / family head."
-* relationship 1..1
-* period  1..1
-//* insurer only Reference($Kenya-organization-ips)
+
+* relationship 0..1 MS
+
+* period  0..1 MS
+
 
