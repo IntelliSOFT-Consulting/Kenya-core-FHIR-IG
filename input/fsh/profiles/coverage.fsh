@@ -21,5 +21,3 @@ Description: "The Coverage profile is intended to provide the identifiers and de
 * relationship 0..1 MS
 
 * period  0..1 MS
-
-

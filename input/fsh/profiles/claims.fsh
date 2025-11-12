@@ -20,8 +20,7 @@ Description: "Standardise the format of electronic claims / pre-authorizations /
 
 * enterer 0..1 MS  
 
-* insurer 0..1 MS  
-* insurer only Reference(KenyaOrganization)
+* insurer 0..1 MS 
 
 * provider 1..1 MS
 
