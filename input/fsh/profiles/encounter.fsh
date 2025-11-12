@@ -1,5 +1,13 @@
-Profile: KenyanEncounter
+Profile: KenyaCoreEncounter
 Parent: Encounter
-Id: kenyan-encounter
-Title: "Encounter Profile"
-Description: " Defines constraints on the Encounter resource for use within the kenyan context "
+Id: kenya-core-encounter
+Title: "Kenya Core Encounter"
+Description: "Encounter profile for visits/admissions."
+
+* identifier 0..*
+* status 1..1 MS
+* class 1..1 MS
+* type 0..* MS
+* subject 1..1 MS
+* period 0..1 MS
+* location 0..* MS

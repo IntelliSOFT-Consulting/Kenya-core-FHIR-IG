@@ -1,25 +1,31 @@
 Profile: KenyaPatient
-Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+Parent: Patient
 Id: kenya-patient
-Title: "Patient Profile"
-Description: "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."
-* identifier 1..* MS
+Title: "Kenya Patient Profile"
+Description: "This profile represents the constraints applied to the Patient resource 
+based on the International Patient Summary (IPS) FHIR Implementation Guide. 
+It describes the minimum expectations for the Patient resource when used 
+in the IPS composition or as a referenced resource."
 
-* obeys PatientName-1
-* name.text 0..1 MS
-* name.family 0..1 MS
-* name.given 1..* MS
+* identifier 0..* MS
 
-* telecom 1..* MS
+* name 0..* MS
+  * obeys PatientName-1
+  * text 0..1 MS
+  * family 0..1 MS
+  * given 0..* MS
 
-* gender 1..1 MS
+* telecom 0..* MS
 
-* birthDate 1.. MS
+* gender 0..1 MS
 
-* maritalStatus 1..1 MS
+* birthDate 0..1 MS
 
-* address 0..1 MS
+* maritalStatus 0..1 MS
 
-* contact.relationship 1..1 MS
+* address 0..* MS
 
-* generalPractitioner 1..1 MS
+* contact 0..* MS
+  * relationship 0..* MS
+
+* generalPractitioner 0..* MS
