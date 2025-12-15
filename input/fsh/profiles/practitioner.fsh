@@ -1,13 +1,16 @@
 Profile:  KenyaCorePractitioner
 Parent:   Practitioner
 Id:       practitioner-sha-ke
-Title:    "Kenya Practitioner Profile"
+Title:    "KenyaCore Practitioner"
 Description: "Practitioner profile for Kenya healthcare providers"
 * ^url = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-12-15"
-
+// Meta - Add profile reference
+* meta.profile 1..1
+* meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner|1.0.0"
+* meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner|1.0.0"
 
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #value
@@ -90,7 +93,7 @@ InstanceOf: KenyaCorePractitioner
 Title: "Example Minimal Kenya Practitioner"
 Description: "Example with minimum required identifiers (only one)"
 Usage: #example
-* identifier[registrationNumber].system = PractitionerRegistrationNumber
+* identifier[registrationNumber].system = $PractitionerRegistrationNumber
 * identifier[registrationNumber].value = "A11539"
 * active = true
 * name.text = "Dr JANE MWANGI"
@@ -104,16 +107,16 @@ Title: "Example Kenya Practitioner Complete"
 Description: "Example of a Kenya practitioner with all required identifiers"
 Usage: #example
 * identifier[+].use = #official
-* identifier[=].system = PractitionerRegistrationNumber
+* identifier[=].system = $PractitionerRegistrationNumber
 * identifier[=].value = "A11539"
 * identifier[+].use = #official
-* identifier[=].system = SladeCode
+* identifier[=].system = $SladeCode
 * identifier[=].value = "801347"
 * identifier[+].use = #official
-* identifier[=].system = PractitionerRegistryID
+* identifier[=].system = $PractitionerRegistryID
 * identifier[=].value = "PUID-0009504-3"
 * identifier[+].use = #official
-* identifier[=].system = National_ID
+* identifier[=].system = $National_ID
 * identifier[=].value = "29944238"
 * active = true
 * name.text = "Dr DENNIS GITONGA GIKUNJU"
