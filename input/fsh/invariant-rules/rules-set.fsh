@@ -27,3 +27,20 @@ Invariant: ken-prac-phone-format
 Description: "Phone must follow Kenya format (+254XXXXXXXXX)"
 Expression: "matches('^\\\\+254[17]\\\\d{8}$')"
 Severity: #warning
+
+
+
+Invariant: provider-org-min-identifier
+Description: "Must have at least one identifier"
+Expression: "identifier.exists()"
+Severity: #error
+
+Invariant: provider-org-fr-code-format
+Description: "FR Code must match expected format"
+Expression: "value.matches('^FID-\\d{2}-\\d{6}-\\d$')"
+Severity: #warning
+
+Invariant: provider-org-type-constraint
+Description: "Organization must be of type provider"
+Expression: "coding.where(system='https://fhir.sha.go.ke/fhir/terminology/CodeSystem/organization-type' and code='prov').exists()"
+Severity: #error

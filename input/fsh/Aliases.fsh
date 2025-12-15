@@ -3,3 +3,7 @@ Alias: PractitionerRegistrationNumber = https://fhir.sha.go.ke/fhir/Practitioner
 Alias: SladeCode = https://fhir.sha.go.ke/fhir/Practitioner/SladeCode
 Alias: PractitionerRegistryID = https://fhir.sha.go.ke/fhir/Practitioner/PractitionerRegistryID
 Alias: National_ID = https://fhir.sha.go.ke/fhir/Practitioner/National_ID
+Alias: $facility-level = https://fhir.sha.go.ke/fhir/StructureDefinition/facility-level
+Alias: $provider-license = https://fhir.sha.go.ke/fhir/license/provider-license
+Alias: $facility-identifier-types = https://fhir.sha.go.ke/fhir/terminology/CodeSystem/facility-identifier-types
+Alias: $organization-type = https://fhir.sha.go.ke/fhir/terminology/CodeSystem/organization-type
