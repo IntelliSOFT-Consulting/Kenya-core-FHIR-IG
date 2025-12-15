@@ -44,3 +44,18 @@ Invariant: provider-org-type-constraint
 Description: "Organization must be of type provider"
 Expression: "coding.where(system='https://fhir.sha.go.ke/fhir/terminology/CodeSystem/organization-type' and code='prov').exists()"
 Severity: #error
+
+Invariant: sha-coverage-id-format
+Description: "Coverage ID should match pattern: CR[timestamp]-[sequence]-sha-coverage"
+Expression: "matches('^CR\\d{13}-\\d+-sha-coverage$')"
+Severity: #warning
+
+Invariant: sha-coverage-id-value-format
+Description: "Coverage identifier value should match pattern: CR[timestamp]-[sequence]-sha-coverage"
+Expression: "matches('^CR\\d{13}-\\d+-sha-coverage$')"
+Severity: #warning
+
+Invariant: sha-patient-reference-format
+Description: "Patient reference should be full URL: https://fhir.sha.go.ke/fhir/Patient/[ID]"
+Expression: "matches('^https://fhir\\.sha\\.go\\.ke/fhir/Patient/[A-Za-z0-9-]+$')"
+Severity: #warning
