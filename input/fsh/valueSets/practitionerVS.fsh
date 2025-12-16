@@ -22,3 +22,24 @@ Id: national-id-vs
 Title: "National ID Value Set"
 * ^url = "https://fhir.sha.go.ke/fhir/ValueSet/national-id"
 * include codes from system $National_ID
+
+
+ValueSet: PractitionerSpecialtiesVS 
+Id: practitioner-specialties-vs
+Title: "Practitioner Specialties Value Set"
+* ^url = "https://fhir.sha.go.ke/fhir/ValueSet/practitioner-specialties"
+* include codes from system $Practitioner_Specialties   
+
+
+ValueSet: KenyaRegulatoryBodyVS
+Id: kenya-regulatory-body-vs
+Title: "Kenya Regulatory Body Value Set"
+* ^url = "https://fhir.sha.go.ke/fhir/ValueSet/kenya-regulatory-body"
+* include codes from system KenyaRegulatoryBody   
+
+
+ValueSet: KenyaLicenseStatusVS
+Id: kenya-license-status-vs
+Title: "Kenya License Status Value Set"
+* ^url = "https://fhir.sha.go.ke/fhir/ValueSet/kenya-license-status"
+* include codes from system KenyaLicenseStatus

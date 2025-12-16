@@ -7,8 +7,7 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-12-15"
-// Meta - Add profile reference
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner|1.0.0"
 
@@ -85,44 +84,16 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * active 1..1
 * active ^short = "Whether this practitioner's record is in active use"
 
+* qualification 0..*
+* qualification.code 1..1 MS
+* qualification.code ^short = "Practitioner's qualification or specialty"
+* qualification.code from PractitionerSpecialtiesVS (preferred) 
+* qualification.extension contains LicenseStatusExtension named licenseStatus 0..1 MS
+* qualification.extension contains LicensingBodyExtension named licensingBody 0..1 MS
+// * qualification.extension:licenseStatus ^short = "License status of the practitioner"
+// * qualification.extension:licenseStatus from KenyaLicenseStatusVS (preferred)
 
-
-
-Instance: ExamplePractitionerMinimal
-InstanceOf: KenyaCorePractitioner
-Title: "Example Minimal Kenya Practitioner"
-Description: "Example with minimum required identifiers (only one)"
-Usage: #example
-* identifier[registrationNumber].system = $PractitionerRegistrationNumber
-* identifier[registrationNumber].value = "A11539"
-* active = true
-* name.text = "Dr JANE MWANGI"
-* telecom[0].system = #phone
-* telecom[0].value = "+254712345679"
-* gender = #female
-
-Instance: ExamplePractitionerComplete
-InstanceOf: KenyaCorePractitioner
-Title: "Example Kenya Practitioner Profile"
-Description: "Example of a Kenya practitioner with all required identifiers"
-Usage: #example
-* identifier[+].use = #official
-* identifier[=].system = $PractitionerRegistrationNumber
-* identifier[=].value = "A11539"
-* identifier[+].use = #official
-* identifier[=].system = $SladeCode
-* identifier[=].value = "801347"
-* identifier[+].use = #official
-* identifier[=].system = $PractitionerRegistryID
-* identifier[=].value = "PUID-0009504-3"
-* identifier[+].use = #official
-* identifier[=].system = $National_ID
-* identifier[=].value = "29944238"
-* active = true
-* name.text = "Dr DENNIS GITONGA GIKUNJU"
-* telecom[+].system = #email
-* telecom[=].value = "dennis.gitonga@example.com"
-* telecom[+].system = #phone
-* telecom[=].value = "+254712345678"
-* address.text = "P.O BOX 99807 80107 MOMBASA"
-* gender = #male
+// * qualification.extension:licensingBody 0..1 MS
+// * qualification.extension:licensingBody ^short = "Licensing body of the practitioner"
+// * qualification.extension:licensingBody from KenyaRegulatoryBodyVS (preferred)
+ 

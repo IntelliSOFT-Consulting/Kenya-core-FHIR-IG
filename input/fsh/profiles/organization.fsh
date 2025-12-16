@@ -71,9 +71,7 @@ Description: "Organization representing healthcare provider facilities in Kenya.
 * type 1..* MS
 * type ^short = "Type of organization"
 * type ^definition = "Organization type - must be provider"
-* type.coding.system = $organization-type
-* type.coding.code = #prov
-* type obeys provider-org-type-constraint
+* type from OrganizationTypeVS
 
 * telecom 0..* MS
 * address 0..* MS

@@ -74,6 +74,12 @@ in the IPS composition or as a referenced resource."
 * identifier[nationalId].value ^short = "National ID value"
 * identifier[nationalId].value obeys national-id-format
 
+* extension 0..* MS
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains PatientEthnicityExtension named citizenship 0..1
+
 // Name - Required with text, family, and given 
 * name 1..* MS
 * name.text 0..1
@@ -99,37 +105,11 @@ in the IPS composition or as a referenced resource."
 * address 0..* MS
 * address.country 0..1 MS
 * maritalStatus 0..1 MS
+* maritalStatus ^short = "Marital status of the patient"
+* maritalStatus from http://hl7.org/fhir/ValueSet/marital-status
 * contact 0..* MS
 * contact.relationship 0..* MS
 * contact.relationship ^short = "The kind of relationship"
 * contact.relationship from http://hl7.org/fhir/ValueSet/patient-contactrelationship
 
- 
-  
-
-Instance: ExampleKenyaCorePatient
-InstanceOf: KenyaCorePatient
-Title: "Example KenyaCorePatient Instance"
-Description: "Example of a SHA Patient resource conforming to the KenyaCorePatient profile"
-Usage: #example
-* id = "CR1569230130821-1"
-* meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient|1.0.0"
-* identifier[shaNumber].use = #official
-* identifier[shaNumber].system = "https://fhir.sha.go.ke/fhir/identifier/shanumber"
-* identifier[shaNumber].value = "CR1569230130821-1"
-* identifier[phoneNumber].use = #official
-* identifier[phoneNumber].system = "https://fhir.sha.go.ke/fhir/identifier/phonenumber"
-* identifier[phoneNumber].value = "+254759592217"
-* identifier[householdNumber].use = #official
-* identifier[householdNumber].system = "https://fhir.sha.go.ke/fhir/identifier/householdnumber"
-* identifier[householdNumber].value = "HH1569230130821-1"
-* identifier[nationalId].use = #official
-* identifier[nationalId].system = "https://fhir.sha.go.ke/fhir/identifier/nationalid"
-* identifier[nationalId].value = "37532638"
-* name[+].text = "CHURCHILL OWINO OCHIENG"
-* name[=].family = "OCHIENG"
-* name[=].given[0] = "CHURCHILL"
-* name[=].given[1] = "OWINO"
-* gender = #male
-* birthDate = "1998-07-10"
  

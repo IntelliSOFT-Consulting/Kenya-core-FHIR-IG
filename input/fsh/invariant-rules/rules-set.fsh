@@ -40,10 +40,7 @@ Description: "FR Code must match expected format"
 Expression: "value.matches('^FID-\\d{2}-\\d{6}-\\d$')"
 Severity: #warning
 
-Invariant: provider-org-type-constraint
-Description: "Organization must be of type provider"
-Expression: "coding.where(system='https://fhir.sha.go.ke/fhir/terminology/CodeSystem/organization-type' and code='prov').exists()"
-Severity: #error
+ 
 
 Invariant: sha-patient-reference-format
 Description: "Patient reference should be full URL: https://fhir.sha.go.ke/fhir/Patient/[ID]"

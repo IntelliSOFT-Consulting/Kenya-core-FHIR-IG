@@ -7,3 +7,9 @@ ValueSet: ApprovalStatusVS
 Id: approval-status-vs
 Title: "Approval Status Value Set"
 * include codes from system ApprovalStatusCS
+
+ValueSet: OrganizationTypeVS
+Id: organization-type-vs
+Title: "Organization Type Value Set"
+Description: "Value set for organization types in Kenya Core FHIR IG"
+* include codes from system OrganizationTypeCS
