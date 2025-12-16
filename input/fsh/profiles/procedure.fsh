@@ -3,8 +3,6 @@ Parent: Procedure
 Id: kenya-core-procedure
 Title: "Kenya Core Procedure Profile"
 Description: "Procedure profile for clinical and surgical procedures."
-
-
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-procedure|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-procedure|1.0.0"

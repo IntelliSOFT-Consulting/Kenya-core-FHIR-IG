@@ -18,9 +18,11 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * identifier ^slicing.description = "Kenya practitioner identifier slicing"
 * identifier obeys ken-prac-min-identifier
 * identifier contains
-    registrationNumber 0..1 and 
-    registryID 0..1 and
-    nationalID 0..1
+    registrationNumber 1..1 and 
+    registryID 1..1 and
+    nationalID 1..1 and
+    licenseNumber 0..*
+
 
 * identifier[registrationNumber] ^short = "Licensing Body registration number (e.g., KMPDC)" 
 * identifier[registrationNumber].use = #official
@@ -40,6 +42,16 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * identifier[nationalID].system from NationalIDVS (required)
 * identifier[nationalID].value 1..1
 * identifier[nationalID].system ^fixedUri = "https://fhir.sha.go.ke/fhir/Practitioner/National_ID"
+
+* identifier[licenseNumber] ^short = "National ID Number" 
+* identifier[licenseNumber].use = #official
+* identifier[licenseNumber].value 1..1 
+* identifier[licenseNumber].period 0..1 MS
+* identifier[licenseNumber].period.start 0..1
+* identifier[licenseNumber].period.end 0..1
+
+
+
   
 * name 1..*
 * name ^short = "Practitioner's name"

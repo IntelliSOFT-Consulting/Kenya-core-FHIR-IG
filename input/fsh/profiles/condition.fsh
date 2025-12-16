@@ -5,7 +5,7 @@ Title: "KenyaCore Condition Profile"
 Description: "Condition/diagnosis profile; bind to ICD/SNOMED where appropriate."
 
 // Meta - Add profile reference
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/condition|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/condition|1.0.0"
 
@@ -17,7 +17,7 @@ Description: "Condition/diagnosis profile; bind to ICD/SNOMED where appropriate.
 * verificationStatus 1..1 
 * verificationStatus from http://terminology.hl7.org/CodeSystem/condition-ver-status (required)
 * category 0..* 
-* category from http://hl7.org/fhir/ValueSet/condition-category (extensible)
+* category from ConditionCategoryVS
 * encounter 0..1 
 * onset[x] 0..1 MS
 * recordedDate 0..1
