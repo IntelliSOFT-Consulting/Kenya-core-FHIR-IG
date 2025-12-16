@@ -79,6 +79,7 @@ in the IPS composition or as a referenced resource."
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains PatientEthnicityExtension named citizenship 0..1
+* extension contains PersonWithDisability named personWithDisability 0..1
 
 // Name - Required with text, family, and given 
 * name 1..* MS
@@ -104,6 +105,8 @@ in the IPS composition or as a referenced resource."
 * telecom 0..* MS
 * address 0..* MS
 * address.country 0..1 MS
+* address.country ^short = "Country of the address"
+* address.country from http://hl7.org/fhir/ValueSet/country
 * maritalStatus 0..1 MS
 * maritalStatus ^short = "Marital status of the patient"
 * maritalStatus from http://hl7.org/fhir/ValueSet/marital-status

@@ -18,35 +18,24 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * identifier ^slicing.description = "Kenya practitioner identifier slicing"
 * identifier obeys ken-prac-min-identifier
 * identifier contains
-    registrationNumber 0..1 and
-    sladeCode 0..1 and
+    registrationNumber 0..1 and 
     registryID 0..1 and
     nationalID 0..1
 
-* identifier[registrationNumber] ^short = "Practitioner Registration Number"
-* identifier[registrationNumber] ^definition = "Official registration number from regulatory body"
+* identifier[registrationNumber] ^short = "Licensing Body registration number (e.g., KMPDC)" 
 * identifier[registrationNumber].use = #official
 * identifier[registrationNumber].system from PractitionerRegistrationNumberVS (required)
-* identifier[registrationNumber].value 1..1
-* identifier[registrationNumber].value ^short = "Registration number value"
+* identifier[registrationNumber].value 1..1 
 * identifier[registrationNumber].system ^fixedUri = "https://fhir.sha.go.ke/fhir/Practitioner/PractitionerRegistrationNumber"
+ 
 
-* identifier[sladeCode] ^short = "Slade Code"
-* identifier[sladeCode] ^definition = "Slade facility code for the practitioner"
-* identifier[sladeCode].use = #official
-* identifier[sladeCode].system from SladeCodeVS (required)
-* identifier[sladeCode].value 1..1
-* identifier[sladeCode].system ^fixedUri = "https://fhir.sha.go.ke/fhir/Practitioner/SladeCode"
-
-* identifier[registryID] ^short = "Practitioner Registry ID"
-* identifier[registryID] ^definition = "Unique practitioner identifier in the national registry"
+* identifier[registryID] ^short = "Links to health worker registry" 
 * identifier[registryID].use = #official
 * identifier[registryID].system from PractitionerRegistryIDVS (required)
 * identifier[registryID].value 1..1
 * identifier[registryID].system ^fixedUri = "https://fhir.sha.go.ke/fhir/Practitioner/PractitionerRegistryID"
 
-* identifier[nationalID] ^short = "National ID Number"
-* identifier[nationalID] ^definition = "Kenya national identification number"
+* identifier[nationalID] ^short = "National ID Number" 
 * identifier[nationalID].use = #official
 * identifier[nationalID].system from NationalIDVS (required)
 * identifier[nationalID].value 1..1
@@ -56,7 +45,6 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * name ^short = "Practitioner's name"
 * name.text 1..1
 * name.text ^short = "Full name in text format"
-* name.text ^definition = "Complete practitioner name in the format: Title FIRSTNAME MIDDLENAME LASTNAME"
  
 * telecom 1..*
 * telecom obeys ken-prac-min-contact and ken-prac-contact-format
@@ -80,7 +68,8 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * address.text ^short = "Full address in text format"
 * address.text ^definition = "Complete postal address including P.O. Box and location"
 * gender 1..1
-* gender ^short = "Male | Female | Other | Unknown"
+* gender ^short = "Practitioner's administrative gender"
+* gender from AdministrativeGenderVS (required)
 * active 1..1
 * active ^short = "Whether this practitioner's record is in active use"
 
@@ -88,12 +77,7 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * qualification.code 1..1 MS
 * qualification.code ^short = "Practitioner's qualification or specialty"
 * qualification.code from PractitionerSpecialtiesVS (preferred) 
+* qualification.period 0..1 MS
 * qualification.extension contains LicenseStatusExtension named licenseStatus 0..1 MS
-* qualification.extension contains LicensingBodyExtension named licensingBody 0..1 MS
-// * qualification.extension:licenseStatus ^short = "License status of the practitioner"
-// * qualification.extension:licenseStatus from KenyaLicenseStatusVS (preferred)
-
-// * qualification.extension:licensingBody 0..1 MS
-// * qualification.extension:licensingBody ^short = "Licensing body of the practitioner"
-// * qualification.extension:licensingBody from KenyaRegulatoryBodyVS (preferred)
+* qualification.extension contains LicensingBodyExtension named licensingBody 0..1 MS 
  
