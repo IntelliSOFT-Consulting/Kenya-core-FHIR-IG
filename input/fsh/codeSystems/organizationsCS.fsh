@@ -26,3 +26,11 @@ Title: "Facility Level"
 * #LEVEL-4 "LEVEL 4" "Level 4 facility"
 * #LEVEL-5 "LEVEL 5" "Level 5 facility"
 * #LEVEL-6 "LEVEL 6" "Level 6 facility"
+
+CodeSystem: ApprovalStatusCS 
+Title: "Approval Status"
+* ^status = #active
+* ^content = #complete
+* #PENDING "PENDING" "Facility approval is pending"
+* #APPROVED "APPROVED" "Facility is approved"
+* #REJECTED "REJECTED" "Facility has been rejected"

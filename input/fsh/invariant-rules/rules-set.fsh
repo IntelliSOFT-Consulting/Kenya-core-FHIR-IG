@@ -1,4 +1,4 @@
-Invariant : PatientName-1
+Invariant : ken-patient-name-present
 Description :  "Patient.name.given, Patient.name.family or Patient.name.text SHALL be present"
 Expression : "family.exists() or given.exists() or text.exists()"
 Severity : #error
@@ -45,16 +45,6 @@ Description: "Organization must be of type provider"
 Expression: "coding.where(system='https://fhir.sha.go.ke/fhir/terminology/CodeSystem/organization-type' and code='prov').exists()"
 Severity: #error
 
-Invariant: sha-coverage-id-format
-Description: "Coverage ID should match pattern: CR[timestamp]-[sequence]-sha-coverage"
-Expression: "matches('^CR\\d{13}-\\d+-sha-coverage$')"
-Severity: #warning
-
-Invariant: sha-coverage-id-value-format
-Description: "Coverage identifier value should match pattern: CR[timestamp]-[sequence]-sha-coverage"
-Expression: "matches('^CR\\d{13}-\\d+-sha-coverage$')"
-Severity: #warning
-
 Invariant: sha-patient-reference-format
 Description: "Patient reference should be full URL: https://fhir.sha.go.ke/fhir/Patient/[ID]"
 Expression: "matches('^https://fhir\\.sha\\.go\\.ke/fhir/Patient/[A-Za-z0-9-]+$')"
@@ -96,15 +86,7 @@ Invariant: valid-birth-date
 Description: "Birth date should be valid and not in the future"
 Expression: "$this <= today()"
 Severity: #error
-
-
-Invariant: sha-claim-id-format
-Description: "Claim ID should be a valid UUID"
-Expression: "matches('^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')"
-Severity: #warning
-
  
-
 Invariant: sha-organization-reference-format
 Description: "Organization reference should follow SHA format"
 Expression: "matches('^https://fhir\\.sha\\.go\\.ke/fhir/Organization/[A-Za-z0-9-]+$')"
@@ -115,17 +97,11 @@ Description: "Practitioner reference should follow SHA format"
 Expression: "matches('^https://fhir\\.sha\\.go\\.ke/fhir/Practitioner/[A-Za-z0-9-]+$')"
 Severity: #warning
 
-Invariant: sha-coverage-reference-format
-Description: "Coverage reference should follow SHA format"
-Expression: "matches('^https://fhir\\.sha\\.go\\.ke/fhir/Coverage/[A-Za-z0-9-]+$')"
-Severity: #warning
-
-Invariant: valid-claim-created-date
-Description: "Claim creation date should be valid"
-Expression: "$this <= today()"
-Severity: #error
-
 Invariant: valid-attachment-url
 Description: "Attachment URL should be valid"
 Expression: "matches('^https://api-edi\\.provider\\.sha\\.go\\.ke/media/edi/.+$')"
 Severity: #warning
+
+ RuleSet: ReferenceRule(path, target, card)
+* {path} {card} MS
+* {path} only Reference({target})

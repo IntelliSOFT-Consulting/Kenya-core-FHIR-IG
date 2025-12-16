@@ -1,7 +1,7 @@
 Profile:  KenyaCorePractitioner
 Parent:   Practitioner
 Id:       practitioner-sha-ke
-Title:    "KenyaCore Practitioner"
+Title:    "KenyaCore Practitioner Profile"
 Description: "Practitioner profile for Kenya healthcare providers"
 * ^url = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner"
 * ^version = "1.0.0"
@@ -103,7 +103,7 @@ Usage: #example
 
 Instance: ExamplePractitionerComplete
 InstanceOf: KenyaCorePractitioner
-Title: "Example Kenya Practitioner Complete"
+Title: "Example Kenya Practitioner Profile"
 Description: "Example of a Kenya practitioner with all required identifiers"
 Usage: #example
 * identifier[+].use = #official

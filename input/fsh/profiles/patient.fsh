@@ -1,7 +1,7 @@
-Profile: KenyaPatient
+Profile: KenyaCorePatient
 Parent: Patient
 Id: kenya-core-patient
-Title: "KenyaCore Patient"
+Title: "KenyaCore Patient Profile"
 Description: "This profile represents the constraints applied to the Patient resource 
 based on the International Patient Summary (IPS) FHIR Implementation Guide. 
 It describes the minimum expectations for the Patient resource when used 
@@ -9,8 +9,7 @@ in the IPS composition or as a referenced resource."
 * ^url = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient"
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2025-12-15" 
-// Meta - Add profile reference
+* ^date = "2025-12-15"
 * meta.profile 1..1
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient|1.0.0"
@@ -93,11 +92,23 @@ in the IPS composition or as a referenced resource."
 * birthDate 1..1 MS
 * birthDate ^short = "Date of birth"
 * birthDate obeys valid-birth-date
+
+* active 0..1 MS
+* active ^short = "Whether this patient's record is in active use"
+* telecom 0..* MS
+* address 0..* MS
+* address.country 0..1 MS
+* maritalStatus 0..1 MS
+* contact 0..* MS
+* contact.relationship 0..* MS
+* contact.relationship ^short = "The kind of relationship"
+* contact.relationship from http://hl7.org/fhir/ValueSet/patient-contactrelationship
+
  
   
 
 Instance: ExampleKenyaCorePatient
-InstanceOf: KenyaPatient
+InstanceOf: KenyaCorePatient
 Title: "Example KenyaCorePatient Instance"
 Description: "Example of a SHA Patient resource conforming to the KenyaCorePatient profile"
 Usage: #example

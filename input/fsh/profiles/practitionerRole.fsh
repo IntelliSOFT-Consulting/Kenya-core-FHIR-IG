@@ -1,7 +1,7 @@
 Profile: KenyaCorePractitionerRole
 Parent: PractitionerRole
 Id: kenya-core-practitionerrole
-Title: "KenyaCore PractitionerRole"
+Title: "KenyaCore PractitionerRole Profile"
 Description: "PractitionerRole linking practitioners to organizations and roles."
 
 // Meta - Add profile reference
