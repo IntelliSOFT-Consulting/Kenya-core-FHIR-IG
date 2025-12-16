@@ -6,7 +6,7 @@
 id: fhir.kenyaCoreIG
 canonical: http://example.org
 name: KENYACoreImplementationGuide
-title: KKenya Core FHIR Implementation Guide (IG)
+title: Kenya Core FHIR Implementation Guide (IG)
 description: Kenya Core FHIR Implementation Guide (IG) describes the FHIR profiles and extensions used to support healthcare data exchange in Kenya.
 status: draft # draft | active | retired | unknown
 version: 0.1.0
