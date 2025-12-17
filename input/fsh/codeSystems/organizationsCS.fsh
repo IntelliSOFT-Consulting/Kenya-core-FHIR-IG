@@ -14,15 +14,31 @@ Title: "Organization Type"
 * ^url = $organization-type
 * ^status = #active
 * ^content = #complete
-* #prov "Provider" "Healthcare provider organization"
+* #private "Private"
+* #community "Community"
+* #NGO "Non-Governmental Organisation"
+* #all "All"
+* #GOK "Government of Kenya"
+* #FBO "Faith-Based Organisation"
 
 CodeSystem: FacilityLevelCS 
 Title: "Facility Level"
 * ^status = #active
 * ^content = #complete
-* #LEVEL-1 "LEVEL 1" "Level 1 facility"
-* #LEVEL-2 "LEVEL 2" "Level 2 facility"
-* #LEVEL-3 "LEVEL 3" "Level 3 facility"
-* #LEVEL-4 "LEVEL 4" "Level 4 facility"
-* #LEVEL-5 "LEVEL 5" "Level 5 facility"
-* #LEVEL-6 "LEVEL 6" "Level 6 facility"
+* #LEVEL-2 "Level 2"
+* #LEVEL-3A "Level 3A"
+* #LEVEL-3B "Level 3B"
+* #LEVEL-4 "Level 4"
+* #LEVEL-5 "Level 5"
+* #LEVEL-6A "Level 6A"
+* #LEVEL-6B "Level 6B"
+
+CodeSystem: ApprovalStatusCS 
+Title: "Approval Status"
+* ^status = #active
+* ^content = #complete
+* #APPROVED "Approved" "Facility is approved"
+* #NOT-APPROVED "Not Approved" "Facility is not approved"
+* #PENDING-APPROVAL "Pending Approval" "Facility approval is pending"
+
+ 
