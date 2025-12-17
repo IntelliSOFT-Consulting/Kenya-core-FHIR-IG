@@ -8,8 +8,11 @@ Description: "Allergy or intolerance record."
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-allergyintolerance|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-allergyintolerance|1.0.0"
 * clinicalStatus 1..1 MS
+* clinicalStatus from ConditionClinicalStatusVS
 * verificationStatus 1..1 MS
+* verificationStatus from ConditionVerificationStatusVS
 * code 1..1 MS
+* code from http://hl7.org/fhir/ValueSet/substance-code
 * patient 1..1 MS
 * reaction 0..* MS
 * reaction.manifestation 1..1 MS

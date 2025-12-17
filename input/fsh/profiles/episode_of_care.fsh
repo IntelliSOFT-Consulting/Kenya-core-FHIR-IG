@@ -7,7 +7,9 @@ Description: "An association between a patient and an organization / healthcare 
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-episodeofcare|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-episodeofcare|1.0.0"
 * status 1..1 MS
+* status from EpisodeOfCareStatusVS
 * type 0..* MS
+* type from http://hl7.org/fhir/ValueSet/episodeofcare-type
 * patient 1..1 MS
 * managingOrganization 0..1 MS
 * period 0..1 MS

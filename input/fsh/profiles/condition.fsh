@@ -13,9 +13,9 @@ Description: "Condition/diagnosis profile; bind to ICD/SNOMED where appropriate.
 * code from http://id.who.int/icd/release/11-mms
 * subject 1..1
 * clinicalStatus 1..1 
-* clinicalStatus from http://terminology.hl7.org/ValueSet/condition-clinical (required)
+* clinicalStatus from ConditionClinicalStatusVS
 * verificationStatus 1..1 
-* verificationStatus from http://terminology.hl7.org/CodeSystem/condition-ver-status (required)
+* verificationStatus from ConditionVerificationStatusVS
 * category 0..* 
 * category from ConditionCategoryVS
 * encounter 0..1 

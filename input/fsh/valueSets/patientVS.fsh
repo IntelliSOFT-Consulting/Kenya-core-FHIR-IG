@@ -11,3 +11,10 @@ Title: "Nationality Value Set"
 * ^url = "https://fhir.sha.go.ke/fhir/ValueSet/nz-ethnic-group-level-4"
 * ^status = #active
 * include codes from system CountryCodesCS
+
+ValueSet: EpisodeOfCareStatusVS
+Id: episode-of-care-status-vs
+Title: "Episode of Care Status Value Set"
+* ^url = "https://fhir.sha.go.ke/fhir/ValueSet/episode-of-care-status"
+* ^status = #active
+* include codes from system EpisodeOfCareStatusCS

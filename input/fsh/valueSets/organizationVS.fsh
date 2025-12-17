@@ -13,3 +13,8 @@ Id: organization-type-vs
 Title: "Organization Type Value Set"
 Description: "Value set for organization types in Kenya Core FHIR IG"
 * include codes from system OrganizationTypeCS
+
+ValueSet: LocationTypeVS
+Id: location-type-vs
+Title: "Location Type Value Set"
+* include codes from system LocationTypeCS

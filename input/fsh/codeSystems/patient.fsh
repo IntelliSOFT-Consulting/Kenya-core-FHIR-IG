@@ -66,3 +66,19 @@ Description: "A code system representing country codes."
 * #UKRAINIAN "Ukrainian"
 * #AMERICAN "American"
 * #VIETNAMESE "Vietnamese"
+
+
+CodeSystem: EpisodeOfCareStatusCS
+Id: episode-of-care-status-cs
+Title: "Episode of Care Status Code System"
+Description: "A code system that defines the status of an episode of care."
+* ^url = $episode-of-care-status
+* ^status = #active
+* ^content = #complete 
+* #PLANNED "Planned" "The episode of care is planned."
+* #ACTIVE "Active" "The episode of care is currently active."
+* #ON-HOLD "On Hold" "The episode of care is on hold."
+* #FINISHED "Finished" "The episode of care has been finished."
+* #WAITLIST "Waitlist" "The patient is on a waitlist for the episode of care."
+* #CANCELLED "Cancelled" "The episode of care has been cancelled."
+* #ENTERED-IN-ERROR "Entered in Error" "The episode of care was entered in error."

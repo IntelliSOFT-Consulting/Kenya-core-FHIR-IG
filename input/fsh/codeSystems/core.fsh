@@ -1,30 +1,32 @@
-
-CodeSystem: FacilityIdentifierTypesCS 
-Title: "Facility Identifier Types"
-* ^url = $facility-identifier-types
+CodeSystem: CoreCodeSystems
+Title: "Core Code Systems for Kenya FHIR IG"
+Description: "This CodeSystem resource defines the core code systems used in the Kenya Core FHIR Implementation Guide."
 * ^status = #active
 * ^content = #complete
+
+* #ENCOUNTER-DIAGNOSIS "Encounter Diagnosis" "Encounter Diagnosis"
+* #PROBLEM-LIST-ITEM "Problem List Item" "Problem List Item"
+* #UNCONFIRMED "Unconfirmed" "Unconfirmed"
+* #DIFFERENTIAL "Differential" "Differential"
+* #CONFIRMED "Confirmed" "Confirmed"
+* #REFUTED "Refuted" "Refuted"
+* #ENTERED-IN-ERROR "Entered-in-Error" "Entered-in-Error"
+* #ACTIVE "Active" "Active"
+* #RESOLVED "Resolved" "Resolved"
+* #INACTIVE "Inactive" "Inactive"
+
+
+// FACILITY LEVEL CODES
 * #slade-code "Code" "Slade facility code"
 * #fid "Fid" "Facility ID"
 * #fr-code "Fr Code" "Facility Registry Code"
 * #registration-number "Registration Number" "Registration number from regulatory body"
-
-CodeSystem: OrganizationTypeCS 
-Title: "Organization Type"
-* ^url = $organization-type
-* ^status = #active
-* ^content = #complete
 * #private "Private"
 * #community "Community"
 * #NGO "Non-Governmental Organisation"
 * #all "All"
 * #GOK "Government of Kenya"
 * #FBO "Faith-Based Organisation"
-
-CodeSystem: FacilityLevelCS 
-Title: "Facility Level"
-* ^status = #active
-* ^content = #complete
 * #LEVEL-2 "Level 2"
 * #LEVEL-3A "Level 3A"
 * #LEVEL-3B "Level 3B"
@@ -32,21 +34,9 @@ Title: "Facility Level"
 * #LEVEL-5 "Level 5"
 * #LEVEL-6A "Level 6A"
 * #LEVEL-6B "Level 6B"
-
-CodeSystem: ApprovalStatusCS 
-Title: "Approval Status"
-* ^status = #active
-* ^content = #complete
 * #APPROVED "Approved" "Facility is approved"
 * #NOT-APPROVED "Not Approved" "Facility is not approved"
 * #PENDING-APPROVAL "Pending Approval" "Facility approval is pending"
-
-
-CodeSystem: LocationTypeCS 
-Title: "Location Type"
-* ^url = $location_type
-* ^status = #active
-* ^content = #complete
 * #WARD "Ward"
 * #OUTPATIENT-CLINIC "Outpatient Clinic"
 * #INPATIENT-WARD "Inpatient Ward"
@@ -72,4 +62,11 @@ Title: "Location Type"
 * #COMMUNITY-OUTREACH-SITE "Community Outreach Site"
 * #HOME-CARE-LOCATION "Home Care Location"
 
- 
+// EPISODE OF CARE STATUS CODES
+* #PLANNED "Planned" "The episode of care is planned."
+* #ACTIVE "Active" "The episode of care is currently active."
+* #ON-HOLD "On Hold" "The episode of care is on hold."
+* #FINISHED "Finished" "The episode of care has been finished."
+* #WAITLIST "Waitlist" "The patient is on a waitlist for the episode of care."
+* #CANCELLED "Cancelled" "The episode of care has been cancelled."
+* #ENTERED-IN-ERROR "Entered in Error" "The episode of care was entered in error."

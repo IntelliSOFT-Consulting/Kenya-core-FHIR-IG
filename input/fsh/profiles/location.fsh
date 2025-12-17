@@ -14,6 +14,7 @@ Description: "Location profile for facility units, wards, labs."
 * name ^short = "Display name"
 * type 0..* MS
 * type ^short = "Type of location (e.g., Ward/clinic/lab/etc.)"
+* type from LocationTypeVS
 * managingOrganization 0..1 MS
 * managingOrganization ^short = "Who manages"
 * address 0..1 MS
