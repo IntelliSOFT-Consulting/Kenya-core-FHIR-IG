@@ -12,4 +12,5 @@ Description: "PractitionerRole linking practitioners to organizations and roles.
 * practitioner 1..1 MS
 * organization 0..1 MS
 * code 0..* MS
+* code from PractitionerRolesVS 
 * specialty 0..* MS

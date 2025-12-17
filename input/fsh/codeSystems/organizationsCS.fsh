@@ -37,8 +37,8 @@ CodeSystem: ApprovalStatusCS
 Title: "Approval Status"
 * ^status = #active
 * ^content = #complete
-* #PENDING "PENDING" "Facility approval is pending"
-* #APPROVED "APPROVED" "Facility is approved"
-* #REJECTED "REJECTED" "Facility has been rejected"
+* #APPROVED "Approved" "Facility is approved"
+* #NOT-APPROVED "Not Approved" "Facility is not approved"
+* #PENDING-APPROVAL "Pending Approval" "Facility approval is pending"
 
  

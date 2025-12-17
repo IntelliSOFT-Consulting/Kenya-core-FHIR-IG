@@ -43,3 +43,9 @@ Id: kenya-license-status-vs
 Title: "Kenya License Status Value Set"
 * ^url = "https://fhir.sha.go.ke/fhir/ValueSet/kenya-license-status"
 * include codes from system KenyaLicenseStatus
+
+ValueSet: PractitionerRolesVS
+Id: practitioner-roles-vs
+Title: "Practitioner Roles Value Set"
+* ^url = "https://fhir.sha.go.ke/fhir/ValueSet/practitioner-roles"
+* include codes from system PractitionerRolesCS
