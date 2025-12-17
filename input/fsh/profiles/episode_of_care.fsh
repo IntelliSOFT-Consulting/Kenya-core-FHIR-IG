@@ -9,7 +9,7 @@ Description: "An association between a patient and an organization / healthcare 
 * status 1..1 MS
 * status from EpisodeOfCareStatusVS
 * type 0..* MS
-* type from http://hl7.org/fhir/ValueSet/episodeofcare-type
+* type from EpisodeOfCareTypeVS
 * patient 1..1 MS
 * managingOrganization 0..1 MS
 * period 0..1 MS

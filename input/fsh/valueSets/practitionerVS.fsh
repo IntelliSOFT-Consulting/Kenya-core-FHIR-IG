@@ -28,7 +28,7 @@ ValueSet: PractitionerSpecialtiesVS
 Id: practitioner-specialties-vs
 Title: "Practitioner Specialties Value Set"
 * ^url = "https://fhir.sha.go.ke/fhir/ValueSet/practitioner-specialties"
-* include codes from system $Practitioner_Specialties   
+* include codes from system PractitionerSpecialtiesCS
 
 
 ValueSet: KenyaRegulatoryBodyVS
@@ -49,3 +49,4 @@ Id: practitioner-roles-vs
 Title: "Practitioner Roles Value Set"
 * ^url = "https://fhir.sha.go.ke/fhir/ValueSet/practitioner-roles"
 * include codes from system PractitionerRolesCS
+ 

@@ -8,11 +8,11 @@ Description: "Kenya Core FHIR profile for Encounter resource, aligned with Kenya
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-encounter|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-encounter|1.0.0"
 * status 1..1 
-* status from http://hl7.org/fhir/ValueSet/encounter-status (required)
+* status from EncounterStatusVS (required)
 * class 1..1 
 * class from http://hl7.org/fhir/ValueSet/v3-ActEncounterCode (required)
 * type 0..* 
-* type from https://nhts.dha.go.ke/orgs/MOH-KENYA/sources/bill/concepts/claim%20subtype/
+* type from EncounterTypeVS
 * subject 1..1  MS
 * participant 0..*
 * participant.individual 1..1
