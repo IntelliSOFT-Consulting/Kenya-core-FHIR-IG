@@ -24,3 +24,7 @@ Description: "QuestionnaireResponse profile for Kenya Core."
 * author ^short = "Who filled"
 * item 1..* MS
 * item ^short = "answers"
+* item.linkId 1..1 MS
+* item.text 0..1
+* item.answer 0..1
+* item.answer.value[x] 1..1 MS
