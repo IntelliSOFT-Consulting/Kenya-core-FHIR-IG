@@ -52,9 +52,6 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * identifier[licenseNumber].period.start 0..1
 * identifier[licenseNumber].period.end 0..1
 
-
-
-  
 * name 1..*
 * name ^short = "Practitioner's name"
 * name.text 1..1

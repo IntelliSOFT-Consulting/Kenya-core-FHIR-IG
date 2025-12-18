@@ -12,9 +12,15 @@ Description: "Observation profile for vitals and lab results."
 * status 1..1 MS
 * category 1..* MS
 * code 1..1 MS
+
 * subject 1..1 MS
 * subject only Reference(KenyaCorePatient)
+
 * encounter 0..1 MS
+* encounter only Reference(KenyaCoreEncounter)
+
 * effective[x] 1..1 MS
 * value[x] 0..1 MS
+
 * performer 0..* MS
+* performer only Reference(KenyaCorePractitioner)

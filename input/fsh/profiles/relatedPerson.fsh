@@ -15,9 +15,12 @@ Description: "RelatedPerson used for next-of-kin, caregivers."
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice identifiers by type" 
+
 * patient 1..1 MS
 * patient only Reference(KenyaCorePatient)
+
 * relationship 0..* MS
 * relationship from RelatedPersonRelationshipVS
+
 * name 0..* MS
 * telecom 0..* MS

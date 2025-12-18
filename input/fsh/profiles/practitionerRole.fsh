@@ -11,8 +11,13 @@ Description: "PractitionerRole linking practitioners to organizations and roles.
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner-role|1.0.0"
 
 * practitioner 1..1 MS
+* practitioner only Reference(KenyaCorePractitioner)
+
 * organization 0..1 MS
+* organization only Reference(KenyaCoreOrganization)
+
 * code 0..* MS
 * code from PractitionerRolesVS 
+
 * specialty 0..* MS
 * specialty from PractitionerSpecialtiesVS
