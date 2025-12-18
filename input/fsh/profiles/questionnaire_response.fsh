@@ -4,6 +4,8 @@ Id: kenya-core-questionnaireresponse
 Title: "Kenya Core QuestionnaireResponse Profile"
 Description: "QuestionnaireResponse profile for Kenya Core."
 
+* id 1..1 MS
+* meta 1..1 MS
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-questionnaireresponse|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-questionnaireresponse|1.0.0"
@@ -13,6 +15,7 @@ Description: "QuestionnaireResponse profile for Kenya Core."
 * status from http://hl7.org/fhir/ValueSet/questionnaire-answers-status
 * subject 1..1 MS
 * subject ^short = "Patient"
+* subject only Reference(KenyaCorePatient)
 * encounter 0..1 MS
 * encounter ^short = "Encounter context"
 * authored 0..1 MS
@@ -21,3 +24,7 @@ Description: "QuestionnaireResponse profile for Kenya Core."
 * author ^short = "Who filled"
 * item 1..* MS
 * item ^short = "answers"
+* item.linkId 1..1 MS
+* item.text 0..1
+* item.answer 0..1
+* item.answer.value[x] 1..1 MS

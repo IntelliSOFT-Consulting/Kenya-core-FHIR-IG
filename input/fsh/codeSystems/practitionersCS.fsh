@@ -1,17 +1,20 @@
-  
-
 CodeSystem: KenyaLicenseStatus 
 Title: "Kenya License Status"
+Description: "Kenya License Status Code Systems"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
 * #active "Active" "Active"
 * #inactive "Inactive" "Inactive"
 
 CodeSystem: KenyaRegulatoryBody 
 Title: "Kenya Regulatory Body"
+Description: " Kenya Regulatory Body Code System"
 * ^status = #active
 * ^content = #complete
-* ^url = $practitioner-regulatory-body
+* ^experimental = false
+* ^caseSensitive = false 
 * #KENYA-MEDICAL-PRACTITIONERS-AND-DENTISTS-COUNCIL-KMPDC "Kenya Medical Practitioners and Dentists Council (KMPDC)"
 * #NURSING-COUNCIL-OF-KENYA-NCK "Nursing Council of Kenya (NCK)"
 * #CLINICAL-OFFICERS-COUNCIL-COC "Clinical Officers Council (COC)"
@@ -27,9 +30,12 @@ Title: "Kenya Regulatory Body"
 
 
 CodeSystem: PractitionerRolesCS
+Title: "Practitioner Roles Code System"
+Description: " Practitioner Roles Code System"
 * ^status = #active
 * ^content = #complete
-* ^url = $practitioner-roles 
+* ^experimental = false
+* ^caseSensitive = false 
 * #OCCUPATIONAL-THERAPIST "Occupational therapist"
 * #SOCIAL-WORKER "Social worker"
 * #DOCTOR "Doctor"
@@ -39,3 +45,54 @@ CodeSystem: PractitionerRolesCS
 * #NURSE-PRACTITIONER "Nurse practitioner"
 * #MIDWIFE "Midwife"
 * #PHARMACIST "Pharmacist"
+
+
+CodeSystem: PractitionerSpecialtiesCS
+Title: "Practitioner Specialities Code System"
+Description: "Practitioner Specialities Code Systems"
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false 
+ 
+* #PHYSIOTHERAPIST "Physiotherapist"
+* #PSYCHOLOGIST "Psychologist"
+* #MEDICAL-DOCTOR "Medical Doctor"
+* #COUNSELLOR "Counsellor"
+* #COUNSELLING-PSYCHOLOGY "Counselling Psychology"
+* #FORENSIC-PSYCHOLOGY "Forensic Psychology"
+* #CLINICAL-PSYCHOLOGY "Clinical Psychology"
+* #COUNSELORSANDPYSHOLOGISTSLICENCE "counselors_and_pyshologists_Licence"
+* #PALLIATIVE-AND-HOSPICE-CARE "PALLIATIVE AND HOSPICE CARE"
+* #CARDIOPULMONARY-PERFUSION "CARDIOPULMONARY PERFUSION"
+* #COMMUNITY-HEALTH-AND-HIV-AIDS-CARE "COMMUNITY HEALTH AND HIV/AIDS CARE"
+* #EPIDEMIOLOGY "EPIDEMIOLOGY"
+* #NEPHROLOGY "NEPHROLOGY"
+* #CARDIOLOGY "CARDIOLOGY"
+* #CHRONIC-DISEASE-MANAGEMENT "CHRONIC DISEASE MANAGEMENT"
+* #AUDIOLOGY-AND-HEARING-CARE-TECHNOLOGY "AUDIOLOGY AND HEARING CARE TECHNOLOGY"
+* #EMERGENCY-AND-CRITICAL-CARE-MEDICINE "EMERGENCY AND CRITICAL CARE MEDICINE"
+* #CHEST-MEDICINE "CHEST MEDICINE"
+* #SPEECH-LANGUAGE-PATHOLOGY "SPEECH & LANGUAGE PATHOLOGY"
+* #PEDIATRICS-CHILD-HEALTH-EMERGENCY-CRITICAL-CARE "PEDIATRICS & CHILD HEALTH EMERGENCY/CRITICAL CARE"
+* #REPRODUCTIVE-HEALTH "REPRODUCTIVE HEALTH"
+* #ORTHOPAEDICS-AND-TRAUMA-SURGERY "ORTHOPAEDICS AND TRAUMA SURGERY"
+* #MEDICAL-EDUCATION "MEDICAL EDUCATION"
+* #CLINICAL-ONCOLOGY-AND-PALLIATIVE-CARE "CLINICAL ONCOLOGY AND PALLIATIVE CARE"
+* #BSC-COMP-OPHTHALMOLOGY-CATARACT-SURGERY "BSC. COMP. OPHTHALMOLOGY & CATARACT SURGERY"
+* #MENTAL-HEALTH-AND-PSYCHIATRY "MENTAL HEALTH AND PSYCHIATRY"
+* #DERMATOLOGY-VENEROLOGY "DERMATOLOGY & VENEROLOGY"
+* #FAMILY-HEALTH "FAMILY HEALTH"
+* #MENTAL-HEALTH-PSYCHIATRY "MENTAL HEALTH & PSYCHIATRY"
+* #MEDICAL-ONCOLOGY "MEDICAL ONCOLOGY"
+* #CHILD-HEALTH-PAEDIATRICS "CHILD HEALTH & PAEDIATRICS"
+* #EMERGENCY-AND-CRITICAL-CARE "EMERGENCY AND CRITICAL CARE"
+* #OCCUPATIONAL-HEALTH-AND-SAFETY "OCCUPATIONAL HEALTH AND SAFETY"
+* #LUNG-SKIN-DISEASES "LUNG & SKIN DISEASES"
+* #ORTHOPAEDICS "ORTHOPAEDICS"
+* #OPHTHALMOLOGY-AND-CATARACT-SURGERY "OPHTHALMOLOGY AND CATARACT SURGERY"
+* #OPHTHALMOLOGY "OPHTHALMOLOGY"
+* #PAEDIATRICS "PAEDIATRICS"
+* #CO-ANAESTHETIST "CO ANAESTHETIST"        
+* #OTHER "other"
+* #GENERAL-PHYSICIAN "General Physician"    

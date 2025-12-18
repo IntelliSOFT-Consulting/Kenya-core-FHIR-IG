@@ -19,3 +19,11 @@ Alias: $intervention-codes = https://fhir.sha.go.ke/fhir/CodeSystem/intervention
 Alias: $icd-11 = https://fhir.sha.go.ke/fhir/terminology/CodeSystem/icd-11
 Alias: $category-codes = https://fhir.sha.go.ke/fhir/CodeSystem/category-codes
 Alias: $Practitioner_Specialties = https://nhts.dha.go.ke/orgs/MOH-KENYA/sources/HIE-REF/concepts/PRACTITIONER_SPECIALTIES/
+Alias: $location_type = https://nhts.dha.go.ke/orgs/MOH-KENYA/sources/HIE-REF/concepts/LOCATION-TYPE/
+Alias: $episode-of-care-status = https://nhts.dha.go.ke/orgs/MOH-KENYA/sources/HIE-REF/concepts/EPISODE-OF-CARE-STATUS/
+Alias: $practitioner-specialties = https://nhts.dha.go.ke/search/?q=PRACTITIONER_SPECIALITIES
+Alias: $0203 = http://hl7.org/fhir/v2/0203
+Alias: $related-person-relationship = https://fhir.sha.go.ke/fhir/CodeSystem/related-person-relationship
+Alias: $encounter-status = https://fhir.sha.go.ke/fhir/CodeSystem/encounter-status
+Alias: $encounter-type = https://fhir.sha.go.ke/fhir/CodeSystem/encounter-type
+Alias: $episode-of-care-type = https://fhir.sha.go.ke/fhir/CodeSystem/episode-of-care-type
