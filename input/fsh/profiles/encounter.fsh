@@ -3,7 +3,9 @@ Parent: Encounter
 Id: kenya-core-encounter
 Title: "Kenya Core Encounter Profile"
 Description: "Kenya Core FHIR profile for Encounter resource, aligned with Kenya Core specifications."
- 
+
+* id 1..1 MS
+* meta 1..1 MS
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-encounter|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-encounter|1.0.0"
@@ -14,6 +16,7 @@ Description: "Kenya Core FHIR profile for Encounter resource, aligned with Kenya
 * type 0..* 
 * type from EncounterTypeVS
 * subject 1..1  MS
+* subject only Reference(KenyaCorePatient)
 * participant 0..*
 * participant.individual 1..1
 * period 0..1

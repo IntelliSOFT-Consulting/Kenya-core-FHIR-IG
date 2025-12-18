@@ -4,7 +4,8 @@ Id: kenya-core-condition
 Title: "KenyaCore Condition Profile"
 Description: "Condition/diagnosis profile; bind to ICD/SNOMED where appropriate."
 
-// Meta - Add profile reference
+* id 1..1 MS
+* meta 1..1 MS
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/condition|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/condition|1.0.0"
@@ -12,6 +13,7 @@ Description: "Condition/diagnosis profile; bind to ICD/SNOMED where appropriate.
 * code 1..1 
 * code from http://id.who.int/icd/release/11-mms
 * subject 1..1
+* subject only Reference(KenyaCorePatient)
 * clinicalStatus 1..1 
 * clinicalStatus from ConditionClinicalStatusVS
 * verificationStatus 1..1 

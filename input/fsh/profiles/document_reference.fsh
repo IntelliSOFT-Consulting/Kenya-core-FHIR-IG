@@ -3,6 +3,9 @@ Parent: DocumentReference
 Id: kenya-core-documentreference
 Title: "Kenya Core DocumentReference Profile"
 Description: "DocumentReference profile for Kenya Core."
+
+* id 1..1 MS
+* meta 1..1 MS
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-documentreference|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-documentreference|1.0.0" 
@@ -16,6 +19,7 @@ Description: "DocumentReference profile for Kenya Core."
 * category from https://build.fhir.org/ig/HL7/US-Core/ValueSet-us-core-documentreference-category.html
 * subject 1..1 MS
 * subject ^short = "Patient"
+* subject only Reference(KenyaCorePatient)
 * date 0..1 MS
 * date ^short = "When created/indexed"
 * author 0..* MS

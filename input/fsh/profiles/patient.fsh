@@ -10,6 +10,9 @@ in the IPS composition or as a referenced resource."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-12-15"
+
+* id 1..1 MS
+* meta 1..1 MS
 * meta.profile 1..1
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient|1.0.0"
