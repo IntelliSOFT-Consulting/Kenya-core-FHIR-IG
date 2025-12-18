@@ -9,16 +9,24 @@ Description: "An association between a patient and an organization / healthcare 
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-episodeofcare|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-episodeofcare|1.0.0"
+
 * status 1..1 MS
 * status from EpisodeOfCareStatusVS
+
 * type 0..* MS
 * type from EpisodeOfCareTypeVS
+
 * patient 1..1 MS
 * patient only Reference(KenyaCorePatient)
+
 * managingOrganization 0..1 MS
+* managingOrganization only Reference(KenyaCoreOrganization)
+
 * period 0..1 MS
 * careManager 0..1 MS
+* careManager only Reference(KenyaCorePractitioner)
+
 * diagnosis 0..* MS
 * diagnosis.condition 1..1 MS
-* diagnosis.condition only Reference(Condition) 
+* diagnosis.condition only Reference(KenyaCoreCondition) 
 
