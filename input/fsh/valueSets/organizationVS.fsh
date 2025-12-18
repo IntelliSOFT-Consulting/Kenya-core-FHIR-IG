@@ -1,11 +1,13 @@
 ValueSet: FacilityLevelVS
 Id: facility-level-vs
 Title: "Facility Level Value Set"
+Description: "Facility Level Value Set"
 * include codes from system FacilityLevelCS
 
 ValueSet: ApprovalStatusVS
 Id: approval-status-vs
 Title: "Approval Status Value Set"
+Description: "Approval Status Value Set"
 * include codes from system ApprovalStatusCS
 
 ValueSet: OrganizationTypeVS
@@ -17,6 +19,7 @@ Description: "Value set for organization types in Kenya Core FHIR IG"
 ValueSet: LocationTypeVS
 Id: location-type-vs
 Title: "Location Type Value Set"
+Description: " Location Types Value Set"
 * include codes from system LocationTypeCS
  
 
