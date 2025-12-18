@@ -10,17 +10,26 @@ Description: "Condition/diagnosis profile; bind to ICD/SNOMED where appropriate.
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/condition|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/condition|1.0.0"
 
-* code 1..1 
+* code 1..1 MS
 * code from http://id.who.int/icd/release/11-mms
-* subject 1..1
+
+* subject 1..1 MS
 * subject only Reference(KenyaCorePatient)
-* clinicalStatus 1..1 
+
+* clinicalStatus 0..1 MS
 * clinicalStatus from ConditionClinicalStatusVS
-* verificationStatus 1..1 
+
+* verificationStatus 0..1 MS
 * verificationStatus from ConditionVerificationStatusVS
+
 * category 0..* 
 * category from ConditionCategoryVS
-* encounter 0..1 
+
+* encounter 0..1 MS
+* encounter only Reference(KenyaCoreEncounter)
+
 * onset[x] 0..1 MS
-* recordedDate 0..1
+* recordedDate 1..1 MS
+
 * asserter 0..1  
+* asserter only Reference(KenyaCorePractitioner)
