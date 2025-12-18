@@ -1,17 +1,20 @@
-  
-
 CodeSystem: KenyaLicenseStatus 
 Title: "Kenya License Status"
+Description: "Kenya License Status Code Systems"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
 * #active "Active" "Active"
 * #inactive "Inactive" "Inactive"
 
 CodeSystem: KenyaRegulatoryBody 
 Title: "Kenya Regulatory Body"
+Description: " Kenya Regulatory Body Code System"
 * ^status = #active
 * ^content = #complete
-* ^url = $practitioner-regulatory-body
+* ^experimental = false
+* ^caseSensitive = false 
 * #KENYA-MEDICAL-PRACTITIONERS-AND-DENTISTS-COUNCIL-KMPDC "Kenya Medical Practitioners and Dentists Council (KMPDC)"
 * #NURSING-COUNCIL-OF-KENYA-NCK "Nursing Council of Kenya (NCK)"
 * #CLINICAL-OFFICERS-COUNCIL-COC "Clinical Officers Council (COC)"
@@ -27,9 +30,12 @@ Title: "Kenya Regulatory Body"
 
 
 CodeSystem: PractitionerRolesCS
+Title: "Practitioner Roles Code System"
+Description: " Practitioner Roles Code System"
 * ^status = #active
 * ^content = #complete
-* ^url = $practitioner-roles 
+* ^experimental = false
+* ^caseSensitive = false 
 * #OCCUPATIONAL-THERAPIST "Occupational therapist"
 * #SOCIAL-WORKER "Social worker"
 * #DOCTOR "Doctor"
@@ -42,9 +48,12 @@ CodeSystem: PractitionerRolesCS
 
 
 CodeSystem: PractitionerSpecialtiesCS
+Title: "Practitioner Specialities Code System"
+Description: "Practitioner Specialities Code Systems"
 * ^status = #active
 * ^content = #complete
-* ^url = $practitioner-specialties
+* ^experimental = false
+* ^caseSensitive = false 
  
 * #PHYSIOTHERAPIST "Physiotherapist"
 * #PSYCHOLOGIST "Psychologist"

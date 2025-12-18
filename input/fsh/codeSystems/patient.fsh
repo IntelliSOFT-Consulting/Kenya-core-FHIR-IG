@@ -4,6 +4,9 @@ Title: "Country Codes"
 Description: "A code system representing country codes."
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #ALBANIAN "Albanian"
 * #AFGHAN "Afghan"
 * #ALGERIAN "Algerian"
@@ -71,10 +74,11 @@ Description: "A code system representing country codes."
 CodeSystem: EpisodeOfCareStatusCS
 Id: episode-of-care-status-cs
 Title: "Episode of Care Status Code System"
-Description: "A code system that defines the status of an episode of care."
-* ^url = $episode-of-care-status
+Description: "A code system that defines the status of an episode of care." 
 * ^status = #active
-* ^content = #complete 
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false 
 * #PLANNED "Planned" "The episode of care is planned."
 * #ACTIVE "Active" "The episode of care is currently active."
 * #ON-HOLD "On Hold" "The episode of care is on hold."
@@ -87,10 +91,12 @@ Description: "A code system that defines the status of an episode of care."
 CodeSystem: EpisodeOfCareTypeCS
 Id: episode-of-care-type-cs
 Title: "Episode of Care Type Code System"
-Description: "A code system that defines types of episodes of care."    
-* ^url = $episode-of-care-type
+Description: "A code system that defines types of episodes of care."     
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #MATERNAL-AND-CHILD-HEALTH-PROGRAM "Maternal and Child Health Program" "The episode of care is a maternal and child health program."
 * #HIV-CARE-AND-TREATMENT-PROGRAM "HIV Care and Treatment Program" "The episode of care is an HIV care and treatment program."
 * #TUBERCULOSIS-PROGRAM "Tuberculosis Program" "The episode of care is a tuberculosis program."
@@ -114,10 +120,12 @@ Description: "A code system that defines types of episodes of care."
 CodeSystem: RelatedPersonRelationshipCS
 Id: related-person-relationship-cs
 Title: "Related Person Relationship Code System"
-Description: "A code system that defines relationships for related persons."
-* ^url = $related-person-relationship
+Description: "A code system that defines relationships for related persons." 
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #SIBLING "Sibling" "The related person is a sibling of the patient."
 * #ADOPTED-CHILD "Adopted Child" "The related person is an adopted child of the patient."
 * #GRANDPARENT "Grandparent" "The related person is a grandparent of the patient."
@@ -128,20 +136,24 @@ Description: "A code system that defines relationships for related persons."
 CodeSystem: EncounterStatusCS
 Id: encounter-status-cs
 Title: "Encounter Status Code System"
-Description: "A code system that defines the status of an encounter."
-* ^url = $encounter-status
+Description: "A code system that defines the status of an encounter." 
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #IN-PROGRESS "In Progress" "The encounter is currently in progress."
 * #FINISHED "Finished" "The encounter has been finished."
 
 CodeSystem: EncounterTypeCS
 Id: encounter-type-cs
 Title: "Encounter Type Code System"
-Description: "A code system that defines types of encounters."
-* ^url = $encounter-type
+Description: "A code system that defines types of encounters." 
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #EMERGENCY-VISIT "Emergency Visit" "The encounter is an emergency visit."
 * #OUTPATIENT-VISIT "Outpatient Visit" "The encounter is an outpatient visit."
 * #REFERRAL-VISIT "Referral Visit" "The encounter is a referral visit."

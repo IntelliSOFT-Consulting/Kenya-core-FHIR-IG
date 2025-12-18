@@ -1,15 +1,16 @@
 
 CodeSystem: FacilityIdentifierTypesCS 
-Title: "Facility Identifier Types"
-* ^url = $facility-identifier-types
+Title: "Facility Identifier Types" 
+Description: "Facility Identifier Types Code Systems"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #slade-code "Code" "Slade facility code"
 * #fid "Fid" "Facility ID"
 * #fr-code "Fr Code" "Facility Registry Code"
 * #registration-number "Registration Number" "Registration number from regulatory body"
-
- 
 
 CodeSystem: OrganizationTypeCS 
 Title: "Organisation Type"
@@ -17,7 +18,8 @@ Description: "Auto-released v20251217120809"
 * ^version = "v20251217120809"
 * ^status = #active
 * ^content = #complete
-
+* ^experimental = false
+* ^caseSensitive = false
 
 * #OSTEOPOROSIS-CLINIC "Osteoporosis Clinic"
 * #ORTHOPAEDIC-OUTREACH-CLINIC "Orthopaedic Outreach Clinic"
@@ -252,8 +254,12 @@ Description: "Auto-released v20251217120809"
 
 CodeSystem: FacilityLevelCS 
 Title: "Facility Level"
+Description: "Facility Level Code Systems"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #LEVEL-2 "Level 2"
 * #LEVEL-3A "Level 3A"
 * #LEVEL-3B "Level 3B"
@@ -264,8 +270,12 @@ Title: "Facility Level"
 
 CodeSystem: ApprovalStatusCS 
 Title: "Approval Status"
+Description: "Approval Status Code Systems"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #YES "Yes"
 * #NO "No"
 * #UNKNOWN "Unknown"
@@ -275,10 +285,13 @@ Title: "Approval Status"
 
 
 CodeSystem: LocationTypeCS 
-Title: "Location Type"
-* ^url = $location_type
+Title: "Location Type" 
+Description: "Location Type Code Systems"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
+
 * #WARD "Ward"
 * #OUTPATIENT-CLINIC "Outpatient Clinic"
 * #INPATIENT-WARD "Inpatient Ward"

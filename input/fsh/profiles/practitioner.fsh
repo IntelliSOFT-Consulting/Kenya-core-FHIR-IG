@@ -2,8 +2,7 @@ Profile:  KenyaCorePractitioner
 Parent:   Practitioner
 Id:       practitioner-sha-ke
 Title:    "KenyaCore Practitioner Profile"
-Description: "Practitioner profile for Kenya healthcare providers"
-* ^url = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner"
+Description: "Practitioner profile for Kenya healthcare providers" 
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-12-15"

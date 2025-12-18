@@ -5,8 +5,7 @@ Title: "KenyaCore Patient Profile"
 Description: "This profile represents the constraints applied to the Patient resource 
 based on the International Patient Summary (IPS) FHIR Implementation Guide. 
 It describes the minimum expectations for the Patient resource when used 
-in the IPS composition or as a referenced resource."
-* ^url = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient"
+in the IPS composition or as a referenced resource." 
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-12-15"
@@ -108,8 +107,7 @@ in the IPS composition or as a referenced resource."
 * telecom 0..* MS
 * address 0..* MS
 * address.country 0..1 MS
-* address.country ^short = "Country of the address"
-* address.country from http://hl7.org/fhir/ValueSet/country
+* address.country ^short = "Country of the address" 
 * maritalStatus 0..1 MS
 * maritalStatus ^short = "Marital status of the patient"
 * maritalStatus from http://hl7.org/fhir/ValueSet/marital-status

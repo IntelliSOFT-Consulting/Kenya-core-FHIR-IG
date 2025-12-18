@@ -1,11 +1,9 @@
 Profile: KenyaCoreOrganization
 Parent: Organization
 Title: "KenyaCore Organization Profile"
-Description: "Organization representing healthcare provider facilities in Kenya."
-* ^url = "http://example.org/StructureDefinition/provider-organization"
+Description: "Organization representing healthcare provider facilities in Kenya." 
 * ^version = "1.0.0"
-* ^status = #active
-* ^date = "2025-12-15"
+* ^status = #active 
 
 * id 1..1 MS
 * meta 1..1 MS
