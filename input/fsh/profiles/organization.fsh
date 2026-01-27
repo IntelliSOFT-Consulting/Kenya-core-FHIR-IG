@@ -1,13 +1,12 @@
 Profile: KenyaCoreOrganization
 Parent: Organization
 Title: "KenyaCore Organization Profile"
-Description: "Organization representing healthcare provider facilities in Kenya."
-* ^url = "http://example.org/StructureDefinition/provider-organization"
+Description: "Organization representing healthcare provider facilities in Kenya." 
 * ^version = "1.0.0"
-* ^status = #active
-* ^date = "2025-12-15"
+* ^status = #active 
 
-// Meta - Add profile reference
+* id 1..1 MS
+* meta 1..1 MS
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/provider-organization|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/provider-organization|1.0.0"

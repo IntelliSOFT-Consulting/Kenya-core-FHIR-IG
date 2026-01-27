@@ -17,6 +17,8 @@ Id: kenya-core-diagnosticreport
 Title: "Kenya Core DiagnosticReport Profile"
 Description: "DiagnosticReport profile for Kenya Core."
 
+* id 1..1 MS
+* meta 1..1 MS
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-diagnosticreport|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-diagnosticreport|1.0.0"
@@ -27,6 +29,7 @@ Description: "DiagnosticReport profile for Kenya Core."
 * code 1..1 MS
 * code from https://nhts.dha.go.ke/orgs/Regenstrief-Institute/sources/LOINC/
 * subject 1..1 MS
+* subject only Reference(KenyaCorePatient)
 * encounter 0..1 MS
 * effective[x] 0..1 MS
 * issued 0..1 MS

@@ -2,11 +2,13 @@ Profile:  KenyaCorePractitioner
 Parent:   Practitioner
 Id:       practitioner-sha-ke
 Title:    "KenyaCore Practitioner Profile"
-Description: "Practitioner profile for Kenya healthcare providers"
-* ^url = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner"
+Description: "Practitioner profile for Kenya healthcare providers" 
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-12-15"
+
+* id 1..1 MS
+* meta 1..1 MS
 * meta.profile 1..*
 * meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner|1.0.0"
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner|1.0.0"
@@ -50,9 +52,6 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * identifier[licenseNumber].period.start 0..1
 * identifier[licenseNumber].period.end 0..1
 
-
-
-  
 * name 1..*
 * name ^short = "Practitioner's name"
 * name.text 1..1
