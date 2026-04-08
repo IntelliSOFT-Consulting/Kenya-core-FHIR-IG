@@ -11,6 +11,7 @@ Description: "Kenya License Status Code Systems"
 CodeSystem: KenyaRegulatoryBody 
 Title: "Kenya Regulatory Body"
 Description: " Kenya Regulatory Body Code System"
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/PRACTITIONER-LICENSING-BODY"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -32,6 +33,7 @@ Description: " Kenya Regulatory Body Code System"
 CodeSystem: PractitionerRolesCS
 Title: "Practitioner Roles Code System"
 Description: " Practitioner Roles Code System"
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/PRACTITIONER-ROLES"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -50,6 +52,7 @@ Description: " Practitioner Roles Code System"
 CodeSystem: PractitionerSpecialtiesCS
 Title: "Practitioner Specialities Code System"
 Description: "Practitioner Specialities Code Systems"
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/PRACTITIONER-SPECIALITIES"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false

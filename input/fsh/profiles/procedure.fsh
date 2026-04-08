@@ -11,6 +11,7 @@ Description: "Procedure profile for clinical and surgical procedures."
 * meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-procedure|1.0.0"
 * status 1..1 MS
 * code 0..1 MS
+* code from ProcedureVS
 
 * subject 1..1 MS
 * subject only Reference(KenyaCorePatient)

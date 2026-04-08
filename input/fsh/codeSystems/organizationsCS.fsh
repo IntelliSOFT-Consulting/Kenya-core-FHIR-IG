@@ -15,6 +15,7 @@ Description: "Facility Identifier Types Code Systems"
 CodeSystem: OrganizationTypeCS 
 Title: "Organisation Type"
 Description: "Auto-released v20251217120809" 
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ORGANISATION-TYPE"
 * ^version = "v20251217120809"
 * ^status = #active
 * ^content = #complete
@@ -255,6 +256,7 @@ Description: "Auto-released v20251217120809"
 CodeSystem: FacilityLevelCS 
 Title: "Facility Level"
 Description: "Facility Level Code Systems"
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/FACILITY-LEVEL"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -271,6 +273,7 @@ Description: "Facility Level Code Systems"
 CodeSystem: ApprovalStatusCS 
 Title: "Approval Status"
 Description: "Approval Status Code Systems"
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/APPROVAL-STATUS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -287,6 +290,7 @@ Description: "Approval Status Code Systems"
 CodeSystem: LocationTypeCS 
 Title: "Location Type" 
 Description: "Location Type Code Systems"
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/LOCATION-TYPE"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
