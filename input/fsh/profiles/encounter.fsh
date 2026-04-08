@@ -32,7 +32,8 @@ Description: "Kenya Core FHIR profile for Encounter resource, aligned with Kenya
 * location.location 1..1 
 * location.location only Reference(KenyaCoreLocation)
 
-* reasonCode 0..*
+* reasonCode 0..* MS
+* reasonCode from  http://hl7.org/fhir/ValueSet/encounter-reason
 
 * diagnosis 0..* MS
 * diagnosis.condition 1..1 
