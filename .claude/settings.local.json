@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sushi --version)",
+      "Bash(tar -tzf package.tgz)",
+      "Bash(tar -xOf package.tgz package/package.json)",
+      "Bash(tar -tzf /Users/daviemukungi/SoftwareDev/FHIR/Kenya-core-FHIR-IG/output/package.tgz)",
+      "Bash(java -version)",
+      "Bash(sushi .)",
+      "Bash(java -jar input-cache/publisher.jar -ig . -tx n/a)",
+      "Bash(python3 -c ' *)",
+      "Bash(ls /Users/daviemukungi/SoftwareDev/FHIR/Kenya-core-FHIR-IG/output/ | grep -E \"qa|err\" && ls /var/folders/jp/snypj_c93ys75gvq8nwct0580000gn/T/ | grep fhir | head -5)",
+      "Read(//private/var/folders/jp/snypj_c93ys75gvq8nwct0580000gn/T/**)"
+    ]
+  }
+}

@@ -3,22 +3,22 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.kenyaCoreIG
-canonical: http://example.org
-name: KENYACoreImplementationGuide
-title: Kenya Core FHIR Implementation Guide (IG)
-description: Kenya Core FHIR Implementation Guide (IG) describes the FHIR profiles and extensions used to support healthcare data exchange in Kenya.
-status: draft # draft | active | retired | unknown
-version: 0.1.0
+id: kenya.fhir.core
+canonical: https://fhir.sha.go.ke/fhir
+name: KenyaCoreImplementationGuide
+title: Kenya Core FHIR Implementation Guide
+description: Kenya Core FHIR Implementation Guide describes the FHIR profiles, extensions, value sets, and code systems used to support healthcare data exchange in Kenya under the Social Health Authority (SHA).
+status: active # draft | active | retired | unknown
+version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: urn:iso:std:iso:3166#KE "Kenya" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: IntelliSOFT Consulting
-  url: https://.com/fhir/example-publisher
-  # email: test@example.org
+  name: Kenya Social Health Authority (SHA)
+  url: https://sha.go.ke
+  email: fhir@sha.go.ke
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced

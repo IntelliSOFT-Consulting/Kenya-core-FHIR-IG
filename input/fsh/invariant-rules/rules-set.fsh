@@ -20,12 +20,12 @@ Severity: #error
 
 Invariant: ken-prac-email-format
 Description: "Email must be valid format if provided"
-Expression: "matches('^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$')"
+Expression: "matches('^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+[.][A-Za-z]{2,}$')"
 Severity: #warning
 
 Invariant: ken-prac-phone-format
 Description: "Phone must follow Kenya format (+254XXXXXXXXX)"
-Expression: "matches('^\\\\+254[17]\\\\d{8}$')"
+Expression: "matches('^[+]254[17][0-9]{8}$')"
 Severity: #warning
 
 
@@ -37,7 +37,7 @@ Severity: #error
 
 Invariant: provider-org-fr-code-format
 Description: "FR Code must match expected format"
-Expression: "value.matches('^FID-\\d{2}-\\d{6}-\\d$')"
+Expression: "value.matches('^FID-[0-9]{2}-[0-9]{6}-[0-9]$')"
 Severity: #warning
 
  
@@ -56,27 +56,27 @@ Severity: #error
 
 Invariant: sha-patient-id-format
 Description: "Patient ID should match SHA format: CR[timestamp]-[sequence]"
-Expression: "matches('^CR\\d{13}-\\d+$')"
+Expression: "matches('^CR[0-9]{13}-[0-9]+$')"
 Severity: #warning
 
 Invariant: sha-number-format
 Description: "SHA Number should match format: CR[timestamp]-[sequence]"
-Expression: "matches('^CR\\d{13}-\\d+$')"
+Expression: "matches('^CR[0-9]{13}-[0-9]+$')"
 Severity: #warning
 
 Invariant: kenya-phone-format
 Description: "Phone number should be valid Kenya format"
-Expression: "matches('^\\\\+254\\d{9}$')"
+Expression: "matches('^[+]254[0-9]{9}$')"
 Severity: #warning
 
 Invariant: household-number-format
 Description: "Household number should match format: HH[timestamp]-[sequence]"
-Expression: "matches('^HH\\d{13}-\\d+$')"
+Expression: "matches('^HH[0-9]{13}-[0-9]+$')"
 Severity: #warning
 
 Invariant: national-id-format
 Description: "National ID should be 8 digits"
-Expression: "matches('^\\d{8}$')"
+Expression: "matches('^[0-9]{8}$')"
 Severity: #warning
 
 Invariant: valid-birth-date
