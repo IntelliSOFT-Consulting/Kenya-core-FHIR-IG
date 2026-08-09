@@ -10,7 +10,7 @@ ValueSet: NZEthnicGroupLevel4VS
 Id: nz-ethnic-group-level-4-vs
 Title: "Nationality Value Set"
 Description: "Nationality Value Set"
-* ^url = "https://fhir.sha.go.ke/fhir/ValueSet/nz-ethnic-group-level-4"
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/NATIONALITY"
 * ^status = #active
 * include codes from system CountryCodesCS
 
@@ -53,4 +53,11 @@ Description: "Encounter Type Value Set"
 * ^url = "https://fhir.sha.go.ke/fhir/ValueSet/encounter-type"
 * ^status = #active
 * include codes from system EncounterTypeCS
+
+ValueSet: ProcedureVS 
+Id: procedure-vs
+Title: "Procedure Codes Value Set"
+Description: "Procedure Codes Value Set"
+* ^url = "https://fhir.sha.go.ke/fhir/ValueSet/procedure-vs"
+* include codes from system ProcedureCS
 

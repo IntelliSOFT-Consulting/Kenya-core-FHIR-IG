@@ -3,7 +3,7 @@ Title: "Condition Category Code System"
 Description: "A code system that defines categories for conditions."
 * ^experimental = false
 * ^caseSensitive = false
-
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CONDITION-CATEGORY"
 * #PROBLEM-LIST-ITEM "Problem List Item" "Problem List Item"
 * #ENCOUNTER-DIAGNOSIS "Encounter Diagnosis" "Encounter Diagnosis"
 * #HEALTH-CONCERN "Health Concern" "Health Concern"
@@ -11,6 +11,7 @@ Description: "A code system that defines categories for conditions."
 CodeSystem: ConditionVerificationStatusCS
 Title: "Condition Verification Status Code System"
 Description: "A code system that defines verification status for conditions."
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CONDITION-VERIFICATION-STATUS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -25,6 +26,7 @@ Description: "A code system that defines verification status for conditions."
 CodeSystem: ConditionClinicalStatusCS
 Title: "Condition Clinical Status Code System"
 Description: "A code system that defines clinical status for conditions."
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CONDITION-CLINICAL-STATUS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
