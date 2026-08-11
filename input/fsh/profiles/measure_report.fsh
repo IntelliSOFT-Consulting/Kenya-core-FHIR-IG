@@ -7,8 +7,7 @@ Description: "Kenya Core profile for the results of calculating a Measure over a
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-measurereport|1.0.0"
-* meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-measurereport|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-measurereport|1.0.0"
 
 * insert IdentifierRequiredRule(identifier, 0..*)
 

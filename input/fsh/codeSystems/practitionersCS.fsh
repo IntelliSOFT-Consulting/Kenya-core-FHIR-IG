@@ -10,7 +10,7 @@ Description: "Kenya License Status Code Systems"
 
 CodeSystem: KenyaRegulatoryBody 
 Title: "Kenya Regulatory Body"
-Description: " Kenya Regulatory Body Code System"
+Description: "Kenya Regulatory Body Code System"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -31,7 +31,7 @@ Description: " Kenya Regulatory Body Code System"
 
 CodeSystem: PractitionerRolesCS
 Title: "Practitioner Roles Code System"
-Description: " Practitioner Roles Code System"
+Description: "Practitioner Roles Code System"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false

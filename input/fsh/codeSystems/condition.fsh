@@ -16,11 +16,12 @@ Description: "A code system that defines verification status for conditions."
 * ^experimental = false
 * ^caseSensitive = false 
 
-* #UNCONFIRMED "Unconfirmed" "Unconfirmed"
-* #DIFFERENTIAL "Differential" "Differential"
-* #CONFIRMED "Confirmed" "Confirmed"
-* #REFUTED "Refuted" "Refuted"
-* #ENTERED-IN-ERROR "Entered-in-Error" "Entered-in-Error"
+* #unconfirmed "Unconfirmed" "Unconfirmed"
+* #provisional "Provisional" "Provisional"
+* #differential "Differential" "Differential"
+* #confirmed "Confirmed" "Confirmed"
+* #refuted "Refuted" "Refuted"
+* #entered-in-error "Entered in Error" "Entered in Error"
  
 CodeSystem: ConditionClinicalStatusCS
 Title: "Condition Clinical Status Code System"
@@ -30,6 +31,9 @@ Description: "A code system that defines clinical status for conditions."
 * ^experimental = false
 * ^caseSensitive = false 
 
-* #ACTIVE "Active" "Active"
-* #RESOLVED "Resolved" "Resolved"
-* #INACTIVE "Inactive" "Inactive"
+* #active "Active" "Active"
+* #recurrence "Recurrence" "Recurrence"
+* #relapse "Relapse" "Relapse"
+* #inactive "Inactive" "Inactive"
+* #remission "Remission" "Remission"
+* #resolved "Resolved" "Resolved"

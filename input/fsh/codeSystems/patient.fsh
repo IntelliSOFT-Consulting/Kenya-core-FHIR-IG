@@ -79,13 +79,13 @@ Description: "A code system that defines the status of an episode of care."
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = false 
-* #PLANNED "Planned" "The episode of care is planned."
-* #ACTIVE "Active" "The episode of care is currently active."
-* #ON-HOLD "On Hold" "The episode of care is on hold."
-* #FINISHED "Finished" "The episode of care has been finished."
-* #WAITLIST "Waitlist" "The patient is on a waitlist for the episode of care."
-* #CANCELLED "Cancelled" "The episode of care has been cancelled."
-* #ENTERED-IN-ERROR "Entered in Error" "The episode of care was entered in error."
+* #planned "Planned" "The episode of care is planned."
+* #active "Active" "The episode of care is currently active."
+* #onhold "On Hold" "The episode of care is on hold."
+* #finished "Finished" "The episode of care has been finished."
+* #waitlist "Waitlist" "The patient is on a waitlist for the episode of care."
+* #cancelled "Cancelled" "The episode of care has been cancelled."
+* #entered-in-error "Entered in Error" "The episode of care was entered in error."
 
 
 CodeSystem: EpisodeOfCareTypeCS
@@ -142,8 +142,8 @@ Description: "A code system that defines the status of an encounter."
 * ^experimental = false
 * ^caseSensitive = false
 
-* #IN-PROGRESS "In Progress" "The encounter is currently in progress."
-* #FINISHED "Finished" "The encounter has been finished."
+* #in-progress "In Progress" "The encounter is currently in progress."
+* #finished "Finished" "The encounter has been finished."
 
 CodeSystem: EncounterTypeCS
 Id: encounter-type-cs
