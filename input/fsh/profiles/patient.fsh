@@ -13,8 +13,8 @@ in the IPS composition or as a referenced resource."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..1
-* meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient|1.0.0"
-* meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/patient|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-patient|1.0.0"
+* obeys sha-patient-min-identifier
 
 * id 1..1
 * id ^short = "Logical id of this artifact"
@@ -25,7 +25,6 @@ in the IPS composition or as a referenced resource."
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
 * identifier ^slicing.description = "Slice identifiers by system"
-* identifier obeys sha-patient-min-identifier
 * identifier contains
     shaNumber 0..1 and
     phoneNumber 0..1 and
@@ -33,45 +32,41 @@ in the IPS composition or as a referenced resource."
     nationalId 0..1
 
 // SHA Number identifier
+* identifier[shaNumber] MS
 * identifier[shaNumber] ^short = "SHA Number"
 * identifier[shaNumber] ^definition = "Unique SHA patient identifier"
 * identifier[shaNumber].use = #official
-* identifier[shaNumber].use ^fixedCode = #official
 * identifier[shaNumber].system = "https://fhir.sha.go.ke/fhir/identifier/shanumber"
-* identifier[shaNumber].system ^fixedUri = "https://fhir.sha.go.ke/fhir/identifier/shanumber"
 * identifier[shaNumber].value 1..1
 * identifier[shaNumber].value ^short = "SHA Number value"
 * identifier[shaNumber].value obeys sha-number-format
 
 // Phone Number identifier
+* identifier[phoneNumber] MS
 * identifier[phoneNumber] ^short = "Phone Number"
 * identifier[phoneNumber] ^definition = "Patient's phone number"
 * identifier[phoneNumber].use = #official
-* identifier[phoneNumber].use ^fixedCode = #official
 * identifier[phoneNumber].system = "https://fhir.sha.go.ke/fhir/identifier/phonenumber"
-* identifier[phoneNumber].system ^fixedUri = "https://fhir.sha.go.ke/fhir/identifier/phonenumber"
 * identifier[phoneNumber].value 1..1
 * identifier[phoneNumber].value ^short = "Phone number value"
 * identifier[phoneNumber].value obeys kenya-phone-format
 
 // Household Number identifier
+* identifier[householdNumber] MS
 * identifier[householdNumber] ^short = "Household Number"
 * identifier[householdNumber] ^definition = "Household identifier for the patient"
 * identifier[householdNumber].use = #official
-* identifier[householdNumber].use ^fixedCode = #official
 * identifier[householdNumber].system = "https://fhir.sha.go.ke/fhir/identifier/householdnumber"
-* identifier[householdNumber].system ^fixedUri = "https://fhir.sha.go.ke/fhir/identifier/householdnumber"
 * identifier[householdNumber].value 1..1
 * identifier[householdNumber].value ^short = "Household number value"
 * identifier[householdNumber].value obeys household-number-format
 
 // National ID identifier
+* identifier[nationalId] MS
 * identifier[nationalId] ^short = "National ID"
 * identifier[nationalId] ^definition = "Kenya national identification number"
 * identifier[nationalId].use = #official
-* identifier[nationalId].use ^fixedCode = #official
 * identifier[nationalId].system = "https://fhir.sha.go.ke/fhir/identifier/nationalid"
-* identifier[nationalId].system ^fixedUri = "https://fhir.sha.go.ke/fhir/identifier/nationalid"
 * identifier[nationalId].value 1..1
 * identifier[nationalId].value ^short = "National ID value"
 * identifier[nationalId].value obeys national-id-format
@@ -80,8 +75,8 @@ in the IPS composition or as a referenced resource."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension contains PatientEthnicityExtension named citizenship 0..1
-* extension contains PersonWithDisability named personWithDisability 0..1
+* extension contains PatientEthnicityExtension named citizenship 0..1 MS
+* extension contains PersonWithDisability named personWithDisability 0..1 MS
 
 // Name - Required with text, family, and given 
 * name 1..* MS

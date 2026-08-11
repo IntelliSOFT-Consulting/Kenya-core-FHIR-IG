@@ -10,47 +10,39 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner|1.0.0"
-* meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/practitioner|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/practitioner-sha-ke|1.0.0"
+* obeys ken-prac-min-identifier
+* obeys ken-prac-min-contact
+* obeys ken-prac-contact-format
 
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Kenya practitioner identifier slicing"
-* identifier obeys ken-prac-min-identifier
+// Other license numbers may still be reported as additional, unsliced
+// identifier entries since slicing.rules is #open.
 * identifier contains
-    registrationNumber 1..1 and 
+    registrationNumber 1..1 and
     registryID 1..1 and
-    nationalID 1..1 and
-    licenseNumber 0..*
+    nationalID 1..1
 
 
-* identifier[registrationNumber] ^short = "Licensing Body registration number (e.g., KMPDC)" 
+* identifier[registrationNumber] ^short = "Licensing Body registration number (e.g., KMPDC)"
 * identifier[registrationNumber].use = #official
-* identifier[registrationNumber].system from PractitionerRegistrationNumberVS (required)
-* identifier[registrationNumber].value 1..1 
+* identifier[registrationNumber].value 1..1
 * identifier[registrationNumber].system ^fixedUri = "https://fhir.sha.go.ke/fhir/Practitioner/PractitionerRegistrationNumber"
- 
 
-* identifier[registryID] ^short = "Links to health worker registry" 
+
+* identifier[registryID] ^short = "Links to health worker registry"
 * identifier[registryID].use = #official
-* identifier[registryID].system from PractitionerRegistryIDVS (required)
 * identifier[registryID].value 1..1
 * identifier[registryID].system ^fixedUri = "https://fhir.sha.go.ke/fhir/Practitioner/PractitionerRegistryID"
 
-* identifier[nationalID] ^short = "National ID Number" 
+* identifier[nationalID] ^short = "National ID Number"
 * identifier[nationalID].use = #official
-* identifier[nationalID].system from NationalIDVS (required)
 * identifier[nationalID].value 1..1
 * identifier[nationalID].system ^fixedUri = "https://fhir.sha.go.ke/fhir/Practitioner/National_ID"
-
-* identifier[licenseNumber] ^short = "National ID Number" 
-* identifier[licenseNumber].use = #official
-* identifier[licenseNumber].value 1..1 
-* identifier[licenseNumber].period 0..1 MS
-* identifier[licenseNumber].period.start 0..1
-* identifier[licenseNumber].period.end 0..1
 
 * name 1..*
 * name ^short = "Practitioner's name"
@@ -58,7 +50,6 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * name.text ^short = "Full name in text format"
  
 * telecom 1..*
-* telecom obeys ken-prac-min-contact and ken-prac-contact-format
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
 * telecom ^slicing.rules = #open

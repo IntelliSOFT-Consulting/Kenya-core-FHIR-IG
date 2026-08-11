@@ -7,8 +7,7 @@ Description: "Kenya Core FHIR profile for Encounter resource, aligned with Kenya
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-encounter|1.0.0"
-* meta.profile ^fixedUri = "https://fhir.sha.go.ke/fhir/StructureDefinition/kenya-core-encounter|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-encounter|1.0.0"
 
 * status 1..1 MS
 * status from EncounterStatusVS (required)

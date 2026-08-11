@@ -8,7 +8,7 @@ CodeSystem: MedicationRequestPriorityCS
 Id: medication-request-priority-cs
 Title: "Medication Request Priority CodeSystem"
 Description: "Codes representing priority levels for MedicationRequest."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/medication-request-priority-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/medication-request-priority-cs"
 
 * ^status = #active
 * ^experimental = false
@@ -24,7 +24,7 @@ CodeSystem: MedicationRequestStatusCS
 Id: medication-request-status-cs
 Title: "MedicationRequest Status CodeSystem"
 Description: "Status codes used for MedicationRequest resources."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/medication-request-status-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/medication-request-status-cs"
 
 * ^status = #active
 * ^experimental = false
@@ -43,7 +43,7 @@ CodeSystem: RouteOfAdministrationCS
 Id: route-of-administration-cs
 Title: "Route of Administration CodeSystem"
 Description: "Route of administration codes from MOH PPB OCL."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/route-of-administration-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/route-of-administration-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -97,7 +97,7 @@ CodeSystem: UnitOfMeasureCS
 Id: unit-of-measure-cs
 Title: "Unit of Measure CodeSystem"
 Description: "Unit of measure codes from MOH PPB OCL."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/unit-of-measure-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/unit-of-measure-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -602,7 +602,7 @@ CodeSystem: ActiveComponentsCS
 Id: active-components-cs
 Title: "Active Components CodeSystem"
 Description: "Active pharmaceutical ingredient codes from MOH PPB OCL."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/active-components-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/active-components-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -3246,7 +3246,7 @@ CodeSystem: GenericProductsCS
 Id: generic-products-cs
 Title: "Generic Products CodeSystem"
 Description: "Generic medicinal product codes from MOH PPB OCL."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/generic-products-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/generic-products-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6285,7 +6285,7 @@ CodeSystem: MedicationRequestStatusReasonCS
 Id: medication-request-status-reason-cs
 Title: "MedicationRequest Status Reason CodeSystem"
 Description: "Reasons for a MedicationRequest status change (e.g. cancelled, on-hold). Source: MOH-KENYA OCL MEDICATIONREQUEST-STATUS-REASON."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/medication-request-status-reason-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/medication-request-status-reason-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6313,7 +6313,7 @@ CodeSystem: MedicationAdminStatusReasonCS
 Id: medication-admin-status-reason-cs
 Title: "MedicationAdministration Status Reason CodeSystem"
 Description: "Reasons for a MedicationAdministration status (e.g. patient refused, not available). Source: MOH-KENYA OCL MEDICATION-ADMIN-STATUS-REASON."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/medication-admin-status-reason-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/medication-admin-status-reason-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6335,7 +6335,7 @@ CodeSystem: ConditionSeverityCS
 Id: condition-severity-cs
 Title: "Condition Severity CodeSystem"
 Description: "Severity codes for Condition resources. Source: MOH-KENYA OCL CONDITION-SEVERITY."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/condition-severity-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/condition-severity-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6353,7 +6353,7 @@ CodeSystem: MedAdminRouteCS
 Id: med-admin-route-cs
 Title: "Medication Administration Route CodeSystem"
 Description: "Route of administration codes used in MedicationAdministration. Source: MOH PPB OCL RouteOfAdministration collection (https://ilm-hie.dha.go.ke/ocl/orgs/MOH-PPB/ValueSet/RouteOfAdministration/$expand)."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/med-admin-route-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/med-admin-route-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6407,7 +6407,7 @@ CodeSystem: CarePlanCategoryCS
 Id: care-plan-category-cs
 Title: "Care Plan Category CodeSystem"
 Description: "Category codes for care plan types. Source: MOH-KENYA OCL CARE-PLAN-CATEGORY."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/care-plan-category-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/care-plan-category-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6437,7 +6437,7 @@ CodeSystem: ProcedureCodeCS
 Id: procedure-code-cs
 Title: "Procedure Code CodeSystem"
 Description: "Clinical procedure codes used in care plan activities and service requests. Source: MOH-KENYA OCL PROCEDURE-CODE."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/procedure-code-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/procedure-code-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6472,7 +6472,7 @@ CodeSystem: ManifestationCS
 Id: manifestation-cs
 Title: "Manifestation or Symptom CodeSystem"
 Description: "Clinical manifestations and symptoms used in allergy reactions, conditions, and observations. Source: MOH-KENYA OCL MANIFESTATION-OR-SYMPTOM."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/manifestation-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/manifestation-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6517,7 +6517,7 @@ CodeSystem: ICD11CodesCS
 Id: icd11-codes-cs
 Title: "ICD-11 Code System"
 Description: "ICD-11 codes for mortality and morbidity statistics. Source: MOH-KENYA OCL ICD-11-FOR-MORTALITY-AND-MORBIDITY-STATISTICS."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/icd11-codes-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -7528,7 +7528,7 @@ CodeSystem: ClaimStatusCS
 Id: claim-status-cs
 Title: "Claim Status Code System"
 Description: "Codes for the status of a claim. Codes align with FHIR fm-status to allow required binding as a subset."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/claim-status-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/claim-status-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -7544,7 +7544,7 @@ CodeSystem: ClaimTypeCS
 Id: claim-type-cs
 Title: "Claim Type Code System"
 Description: "Codes for the type of claim. Codes align with FHIR claim-type to allow required binding as a subset."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/claim-type-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/claim-type-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -7561,7 +7561,7 @@ CodeSystem: ClaimUseCS
 Id: claim-use-cs
 Title: "Claim Use Code System"
 Description: "Codes for the intended use of a claim. Codes align with FHIR claim-use to allow required binding as a subset."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/claim-use-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/claim-use-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -7576,7 +7576,7 @@ CodeSystem: CoverageTypeCS
 Id: coverage-type-cs
 Title: "Coverage Type Code System"
 Description: "Codes for the type of insurance coverage (MOH-Kenya OCL: COVERAGE-TYPE)"
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/coverage-type-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/coverage-type-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -7595,7 +7595,7 @@ CodeSystem: ReferralSourceCS
 Id: referral-source-cs
 Title: "Referral Source Code System"
 Description: "Codes for the source from which a client was referred (community, health provider, or self-referral)."
-* ^url = "https://fhir.sha.go.ke/fhir/CodeSystem/referral-source-cs"
+* ^url = "https://fhir.dha.go.ke/ig/core/CodeSystem/referral-source-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
