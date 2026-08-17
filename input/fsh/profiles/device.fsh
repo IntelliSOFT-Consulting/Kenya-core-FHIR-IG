@@ -7,7 +7,7 @@ Description: "Kenya Core profile for a physical medical device (equipment, appli
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-device|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-device"
 
 * insert IdentifierRequiredRule(identifier, 0..*)
 

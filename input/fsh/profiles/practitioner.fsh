@@ -10,7 +10,7 @@ Description: "Practitioner profile for Kenya healthcare providers"
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/practitioner-sha-ke|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/practitioner-sha-ke"
 * obeys ken-prac-min-identifier
 * obeys ken-prac-min-contact
 * obeys ken-prac-contact-format

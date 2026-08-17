@@ -7,7 +7,7 @@ Description: "QuestionnaireResponse profile for Kenya Core."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-questionnaireresponse|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-questionnaireresponse"
 * questionnaire 1..1 MS
 * questionnaire ^short = "Questionnaire definition"
 * status 1..1 MS

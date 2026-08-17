@@ -7,7 +7,7 @@ Description: "Kenya Core profile for a request to convey information, e.g. a req
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-communicationrequest|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-communicationrequest"
 
 * insert IdentifierRequiredRule(identifier, 0..*)
 

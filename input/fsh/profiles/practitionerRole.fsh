@@ -7,7 +7,7 @@ Description: "PractitionerRole linking practitioners to organizations and roles.
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..1
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-practitionerrole|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-practitionerrole"
 
 * practitioner 1..1 MS
 * practitioner only Reference(KenyaCorePractitioner)
