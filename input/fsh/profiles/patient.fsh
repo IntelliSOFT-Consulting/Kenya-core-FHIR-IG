@@ -38,6 +38,7 @@ in the IPS composition or as a referenced resource."
 * identifier[shaNumber].use = #official
 * identifier[shaNumber].system 1..1 MS
 * identifier[shaNumber].system ^short = "The namespace for the identifier value"
+* identifier[shaNumber].system = "https://fhir.sha.go.ke/fhir/identifier/shanumber"
 * identifier[shaNumber].value 1..1
 * identifier[shaNumber].value ^short = "SHA Number value"
 * identifier[shaNumber].value obeys sha-number-format
@@ -49,10 +50,11 @@ in the IPS composition or as a referenced resource."
 * identifier[phoneNumber].use = #official
 * identifier[phoneNumber].system 1..1 MS
 * identifier[phoneNumber].system ^short = "The namespace for the identifier value"
+* identifier[phoneNumber].system = "https://fhir.sha.go.ke/fhir/identifier/phonenumber"
 * identifier[phoneNumber].value 1..1
 * identifier[phoneNumber].value ^short = "Phone number value"
 * identifier[phoneNumber].value obeys kenya-phone-format
-
+    
 // Household Number identifier
 * identifier[householdNumber] MS
 * identifier[householdNumber] ^short = "Household Number"
@@ -60,6 +62,7 @@ in the IPS composition or as a referenced resource."
 * identifier[householdNumber].use = #official
 * identifier[householdNumber].system 1..1 MS
 * identifier[householdNumber].system ^short = "The namespace for the identifier value"
+* identifier[householdNumber].system = "https://fhir.sha.go.ke/fhir/identifier/householdnumber"
 * identifier[householdNumber].value 1..1
 * identifier[householdNumber].value ^short = "Household number value"
 * identifier[householdNumber].value obeys household-number-format
@@ -71,6 +74,7 @@ in the IPS composition or as a referenced resource."
 * identifier[nationalId].use = #official
 * identifier[nationalId].system 1..1 MS
 * identifier[nationalId].system ^short = "The namespace for the identifier value"
+* identifier[nationalId].system = "https://fhir.sha.go.ke/fhir/identifier/nationalid"
 * identifier[nationalId].value 1..1
 * identifier[nationalId].value ^short = "National ID value"
 * identifier[nationalId].value obeys national-id-format
