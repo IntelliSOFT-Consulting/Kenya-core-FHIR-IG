@@ -8,7 +8,7 @@ Title: "Example Organization - Kenyatta National Hospital"
 Description: "Example provider organization used as the actor in other Kenya Core examples."
 Usage: #example
 * id = "example-organization-knh"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-organization|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-organization"
 * identifier[providerLicense].use = #official
 * identifier[providerLicense].system = $provider-license
 * identifier[providerLicense].value = "PL-2024-00123"
@@ -26,7 +26,7 @@ Title: "Example Practitioner - Dr Sarah Njoroge"
 Description: "Example practitioner used as requester/author/agent in other Kenya Core examples."
 Usage: #example
 * id = "example-practitioner-njoroge"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/practitioner-sha-ke|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/practitioner-sha-ke"
 * identifier[registrationNumber].use = #official
 * identifier[registrationNumber].system = "https://fhir.sha.go.ke/fhir/Practitioner/PractitionerRegistrationNumber"
 * identifier[registrationNumber].value = "KMPDC-2018-04521"
@@ -50,8 +50,9 @@ Title: "Example Patient - Amina Hassan"
 Description: "Example patient used as subject in other Kenya Core examples."
 Usage: #example
 * id = "CR2026080100001-1"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-patient|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-patient"
 * identifier[phoneNumber].use = #official
+* identifier[phoneNumber].system = "https://fhir.sha.go.ke/fhir/identifier/phonenumber"
 * identifier[phoneNumber].value = "+254712345678"
 * name.family = "Hassan"
 * name.given = "Amina"
@@ -65,7 +66,7 @@ Title: "Example Encounter - Amina Hassan Outpatient Visit"
 Description: "Example outpatient encounter used as context for other Kenya Core examples."
 Usage: #example
 * id = "example-encounter-amina-outpatient"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-encounter|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-encounter"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
 * subject = Reference(ExampleKenyaCorePatient)
@@ -84,7 +85,7 @@ Title: "Example ServiceRequest - Full Haemogram Lab Order"
 Description: "Example lab order requesting a full haemogram for Amina Hassan."
 Usage: #example
 * id = "example-servicerequest-amina-fhg"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-servicerequest|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-servicerequest"
 * identifier.use = #official
 * identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier.type.coding.code = #PLAC
@@ -122,7 +123,7 @@ Title: "Example Communication - Lab Result Notification Call"
 Description: "Example record of a phone call notifying Amina Hassan that her lab results are ready."
 Usage: #example
 * id = "example-communication-amina-results-call"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-communication|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-communication"
 * identifier.use = #official
 * identifier.type.text = "Communication Identifier"
 * identifier.system = "https://fhir.sha.go.ke/fhir/identifier/communication"
@@ -154,7 +155,7 @@ Title: "Example Device - Infusion Pump"
 Description: "Example infusion pump device owned by Kenyatta National Hospital."
 Usage: #example
 * id = "example-device-infusion-pump-01"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-device|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-device"
 * identifier.use = #official
 * identifier.type.text = "Device Asset Identifier"
 * identifier.system = "https://fhir.sha.go.ke/fhir/identifier/device-asset-tag"
@@ -185,7 +186,7 @@ Title: "Example Measure - Fourth Antenatal Care Visit Coverage"
 Description: "Example quality measure tracking the proportion of pregnant clients completing a fourth antenatal care visit."
 Usage: #example
 * id = "example-measure-anc4-coverage"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-measure|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-measure"
 * url = "https://fhir.dha.go.ke/ig/core/Measure/example-measure-anc4-coverage"
 * identifier.use = #official
 * identifier.type.text = "Measure Identifier"
@@ -223,7 +224,7 @@ Title: "Example MeasureReport - ANC4 Coverage, August 2026"
 Description: "Example facility-level summary report of ANC4 coverage submitted by Kenyatta National Hospital."
 Usage: #example
 * id = "example-measurereport-anc4-knh-202608"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-measurereport|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-measurereport"
 * identifier.use = #official
 * identifier.type.text = "MeasureReport Identifier"
 * identifier.system = "https://fhir.sha.go.ke/fhir/identifier/measurereport"
@@ -252,7 +253,7 @@ Title: "Example DetectedIssue - Duplicate Therapy Alert"
 Description: "Example clinical decision support alert flagging a duplicate therapy for Amina Hassan."
 Usage: #example
 * id = "example-detectedissue-amina-duplicate-therapy"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-detectedissue|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-detectedissue"
 * identifier.use = #official
 * identifier.type.text = "DetectedIssue Identifier"
 * identifier.system = "https://fhir.sha.go.ke/fhir/identifier/detectedissue"
@@ -281,7 +282,7 @@ Title: "Example Provenance - ServiceRequest Authorship"
 Description: "Example provenance record describing the creation of the example ServiceRequest by Dr Sarah Njoroge."
 Usage: #example
 * id = "example-provenance-servicerequest-amina"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-provenance|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-provenance"
 * target = Reference(ExampleKenyaCoreServiceRequest)
 * occurredDateTime = "2026-08-01T08:45:00+03:00"
 * recorded = "2026-08-01T08:45:12+03:00"
@@ -305,7 +306,7 @@ Title: "Example CommunicationRequest - Request to Notify of Results"
 Description: "Example request for the care team to notify Amina Hassan once her lab results are available."
 Usage: #example
 * id = "example-communicationrequest-amina-notify"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-communicationrequest|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-communicationrequest"
 * identifier.use = #official
 * identifier.type.text = "CommunicationRequest Identifier"
 * identifier.system = "https://fhir.sha.go.ke/fhir/identifier/communicationrequest"
@@ -337,7 +338,7 @@ Title: "Example Task - Fulfil Lab Order"
 Description: "Example workflow task tracking fulfilment of the example ServiceRequest by the KNH laboratory."
 Usage: #example
 * id = "example-task-fulfil-fhg-order"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-task|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-task"
 * identifier.use = #official
 * identifier.type.text = "Task Identifier"
 * identifier.system = "https://fhir.sha.go.ke/fhir/identifier/task"
@@ -369,7 +370,7 @@ Title: "Example Consent - Data Sharing with SHA"
 Description: "Example patient consent authorizing sharing of clinical data with the Social Health Authority."
 Usage: #example
 * id = "example-consent-amina-sha-sharing"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-consent|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-consent"
 * identifier.use = #official
 * identifier.type.text = "Consent Identifier"
 * identifier.system = "https://fhir.sha.go.ke/fhir/identifier/consent"
@@ -406,7 +407,7 @@ Title: "Example DocumentReference - Lab Report PDF"
 Description: "Example document reference pointing to a scanned/printable copy of Amina Hassan's full haemogram report."
 Usage: #example
 * id = "example-documentreference-amina-fhg-report"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-documentreference|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-documentreference"
 * status = #current
 * type.coding.system = "http://loinc.org"
 * type.coding.code = #11502-2
@@ -432,7 +433,7 @@ Title: "Example Location - KNH Outpatient Clinic"
 Description: "Example clinic location used as context for other Kenya Core examples."
 Usage: #example
 * id = "example-location-knh-opd"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-location|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-location"
 * status = #active
 * name = "KNH Outpatient Clinic"
 * type = LocationTypeCS#OUTPATIENT-CLINIC "Outpatient Clinic"
@@ -444,7 +445,7 @@ Title: "Example AllergyIntolerance - Penicillin Allergy"
 Description: "Example allergy record for Amina Hassan."
 Usage: #example
 * id = "example-allergyintolerance-amina-penicillin"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-allergyintolerance|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-allergyintolerance"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
 * code.coding.system = "http://snomed.info/sct"
@@ -462,7 +463,7 @@ Title: "Example Condition - Iron Deficiency Anaemia"
 Description: "Example diagnosis recorded for Amina Hassan during her outpatient visit."
 Usage: #example
 * id = "example-condition-amina-anaemia"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-condition|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-condition"
 * code.coding.system = "http://id.who.int/icd/release/11/mms"
 * code.coding.code = #3A00
 * code.coding.display = "Iron deficiency anaemia"
@@ -481,7 +482,7 @@ Title: "Example Observation - Haemoglobin Result"
 Description: "Example laboratory result observation for Amina Hassan's full haemogram."
 Usage: #example
 * id = "example-observation-amina-hgb"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-observation|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-observation"
 * status = #final
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category.coding.code = #laboratory
@@ -504,7 +505,7 @@ Title: "Example DiagnosticReport - Full Haemogram"
 Description: "Example laboratory diagnostic report summarising Amina Hassan's full haemogram results."
 Usage: #example
 * id = "example-diagnosticreport-amina-fhg"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-diagnosticreport|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-diagnosticreport"
 * status = #final
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0074"
 * category.coding.code = #LAB
@@ -525,7 +526,7 @@ Title: "Example Procedure - Venepuncture"
 Description: "Example procedure record for the blood draw supporting Amina Hassan's full haemogram."
 Usage: #example
 * id = "example-procedure-amina-venepuncture"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-procedure|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-procedure"
 * status = #completed
 * code.coding.system = "http://snomed.info/sct"
 * code.coding.code = #28191000
@@ -542,7 +543,7 @@ Title: "Example EpisodeOfCare - Outpatient Care Episode"
 Description: "Example episode of care for Amina Hassan's ongoing outpatient management."
 Usage: #example
 * id = "example-episodeofcare-amina-outpatient"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-episodeofcare|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-episodeofcare"
 * status = #active
 * type = EpisodeOfCareTypeCS#NON-COMMUNICABLE-DISEASE-PROGRAM "Non-Communicable Disease Program"
 * patient = Reference(ExampleKenyaCorePatient)
@@ -557,7 +558,7 @@ Title: "Example PractitionerRole - Dr Njoroge at KNH"
 Description: "Example role linking Dr Sarah Njoroge to Kenyatta National Hospital."
 Usage: #example
 * id = "example-practitionerrole-njoroge-knh"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-practitionerrole|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-practitionerrole"
 * practitioner = Reference(ExampleKenyaCorePractitioner)
 * organization = Reference(ExampleKenyaCoreOrganization)
 * code = PractitionerRolesCS#DOCTOR "Doctor"
@@ -569,7 +570,7 @@ Title: "Example RelatedPerson - Amina's Next of Kin"
 Description: "Example next-of-kin contact for Amina Hassan."
 Usage: #example
 * id = "example-relatedperson-amina-nok"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-relatedperson|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-relatedperson"
 * patient = Reference(ExampleKenyaCorePatient)
 * relationship = RelatedPersonRelationshipCS#RELATIVE "Relative"
 * name.text = "Fatuma Hassan"
@@ -582,8 +583,8 @@ Title: "Example QuestionnaireResponse - Intake Form"
 Description: "Example completed intake questionnaire for Amina Hassan."
 Usage: #example
 * id = "example-questionnaireresponse-amina-intake"
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-questionnaireresponse|1.0.0"
-* questionnaire = "https://fhir.dha.go.ke/ig/core/Questionnaire/patient-intake|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-questionnaireresponse"
+* questionnaire = "https://fhir.dha.go.ke/ig/core/Questionnaire/patient-intake"
 * status = #completed
 * subject = Reference(ExampleKenyaCorePatient)
 * encounter = Reference(ExampleKenyaCoreEncounter)

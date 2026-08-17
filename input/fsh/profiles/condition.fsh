@@ -7,7 +7,7 @@ Description: "Condition/diagnosis profile; bind to ICD/SNOMED where appropriate.
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-condition|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-condition"
 
 * code 1..1 MS
 * code from http://id.who.int/icd/release/11-mms

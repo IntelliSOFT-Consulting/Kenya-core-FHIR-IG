@@ -13,7 +13,7 @@ in the IPS composition or as a referenced resource."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..1
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-patient|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-patient"
 * obeys sha-patient-min-identifier
 
 * id 1..1
@@ -36,7 +36,8 @@ in the IPS composition or as a referenced resource."
 * identifier[shaNumber] ^short = "SHA Number"
 * identifier[shaNumber] ^definition = "Unique SHA patient identifier"
 * identifier[shaNumber].use = #official
-* identifier[shaNumber].system = "https://fhir.sha.go.ke/fhir/identifier/shanumber"
+* identifier[shaNumber].system 1..1 MS
+* identifier[shaNumber].system ^short = "The namespace for the identifier value"
 * identifier[shaNumber].value 1..1
 * identifier[shaNumber].value ^short = "SHA Number value"
 * identifier[shaNumber].value obeys sha-number-format
@@ -46,7 +47,8 @@ in the IPS composition or as a referenced resource."
 * identifier[phoneNumber] ^short = "Phone Number"
 * identifier[phoneNumber] ^definition = "Patient's phone number"
 * identifier[phoneNumber].use = #official
-* identifier[phoneNumber].system = "https://fhir.sha.go.ke/fhir/identifier/phonenumber"
+* identifier[phoneNumber].system 1..1 MS
+* identifier[phoneNumber].system ^short = "The namespace for the identifier value"
 * identifier[phoneNumber].value 1..1
 * identifier[phoneNumber].value ^short = "Phone number value"
 * identifier[phoneNumber].value obeys kenya-phone-format
@@ -56,7 +58,8 @@ in the IPS composition or as a referenced resource."
 * identifier[householdNumber] ^short = "Household Number"
 * identifier[householdNumber] ^definition = "Household identifier for the patient"
 * identifier[householdNumber].use = #official
-* identifier[householdNumber].system = "https://fhir.sha.go.ke/fhir/identifier/householdnumber"
+* identifier[householdNumber].system 1..1 MS
+* identifier[householdNumber].system ^short = "The namespace for the identifier value"
 * identifier[householdNumber].value 1..1
 * identifier[householdNumber].value ^short = "Household number value"
 * identifier[householdNumber].value obeys household-number-format
@@ -66,7 +69,8 @@ in the IPS composition or as a referenced resource."
 * identifier[nationalId] ^short = "National ID"
 * identifier[nationalId] ^definition = "Kenya national identification number"
 * identifier[nationalId].use = #official
-* identifier[nationalId].system = "https://fhir.sha.go.ke/fhir/identifier/nationalid"
+* identifier[nationalId].system 1..1 MS
+* identifier[nationalId].system ^short = "The namespace for the identifier value"
 * identifier[nationalId].value 1..1
 * identifier[nationalId].value ^short = "National ID value"
 * identifier[nationalId].value obeys national-id-format

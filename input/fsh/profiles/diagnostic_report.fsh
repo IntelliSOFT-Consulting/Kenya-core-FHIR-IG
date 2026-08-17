@@ -20,7 +20,7 @@ Description: "DiagnosticReport profile for Kenya Core."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-diagnosticreport|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-diagnosticreport"
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/diagnostic-report-status
 * category 0..* MS

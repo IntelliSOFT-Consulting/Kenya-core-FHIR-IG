@@ -7,7 +7,7 @@ Description: "RelatedPerson used for next-of-kin, caregivers."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-relatedperson|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-relatedperson"
 
 * identifier 0..* MS
 * identifier ^slicing.discriminator.type = #pattern

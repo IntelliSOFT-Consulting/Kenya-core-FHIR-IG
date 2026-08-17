@@ -7,7 +7,7 @@ Description: "Kenya Core base profile for a Task representing a piece of work to
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-task|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-task"
 
 * insert IdentifierRequiredRule(identifier, 0..*)
 

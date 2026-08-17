@@ -7,7 +7,7 @@ Description: "DocumentReference profile for Kenya Core."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-documentreference|1.0.0"
+* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-documentreference"
 
 
 * status 1..1 MS
