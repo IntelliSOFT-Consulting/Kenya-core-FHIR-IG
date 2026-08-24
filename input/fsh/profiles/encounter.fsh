@@ -13,7 +13,7 @@ Description: "Kenya Core FHIR profile for Encounter resource, aligned with Kenya
 * status from EncounterStatusVS (required)
 
 * class 1..1  MS
-* class from http://hl7.org/fhir/ValueSet/v3-ActEncounterCode (required)
+* class from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (required)
 
 * type 0..* 
 * type from EncounterTypeVS

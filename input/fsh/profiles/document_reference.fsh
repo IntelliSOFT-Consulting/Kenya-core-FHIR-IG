@@ -19,7 +19,7 @@ Description: "DocumentReference profile for Kenya Core."
 
 * category 0..* MS
 * category ^short = "Grouping tags"
-* category from http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category
+* category from http://hl7.org/fhir/ValueSet/document-classcodes
 
 * subject 1..1 MS
 * subject ^short = "Patient"

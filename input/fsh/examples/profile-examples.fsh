@@ -99,7 +99,7 @@ Usage: #example
 * priority = #routine
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #58410-2
-* code.coding.display = "CBC panel"
+* code.coding.display = "CBC panel - Blood by Automated count"
 * code.text = "Full haemogram"
 * subject = Reference(ExampleKenyaCorePatient)
 * encounter = Reference(ExampleKenyaCoreEncounter)
@@ -107,7 +107,7 @@ Usage: #example
 * authoredOn = "2026-08-01T08:45:00+03:00"
 * requester = Reference(ExampleKenyaCorePractitioner)
 * performer = Reference(ExampleKenyaCoreOrganization)
-* reasonCode.coding.system = "http://id.who.int/icd/release/11-mms"
+* reasonCode.coding.system = "http://id.who.int/icd/release/11/mms"
 * reasonCode.coding.code = #MG30
 * reasonCode.coding.display = "Anaemia, unspecified"
 * note.text = "Patient presenting with fatigue; rule out anaemia."
@@ -140,8 +140,8 @@ Usage: #example
 * sender = Reference(ExampleKenyaCorePractitioner)
 * recipient = Reference(ExampleKenyaCorePatient)
 * reasonCode.coding.system = "http://snomed.info/sct"
-* reasonCode.coding.code = #438451000124107
-* reasonCode.coding.display = "Notification of laboratory test result"
+* reasonCode.coding.code = #386472008
+* reasonCode.coding.display = "Telephone consultation"
 * payload.contentString = "Your full haemogram results are ready. Please contact the clinic to discuss."
 
 
@@ -162,8 +162,8 @@ Usage: #example
 * identifier.value = "KNH-ASSET-INFPUMP-014"
 * status = #active
 * type.coding.system = "http://snomed.info/sct"
-* type.coding.code = #69784007
-* type.coding.display = "Infusion pump, device"
+* type.coding.code = #430033006
+* type.coding.display = "Infusion pump"
 * manufacturer = "B. Braun Melsungen AG"
 * manufactureDate = "2023-02-10"
 * expirationDate = "2033-02-10"
@@ -324,8 +324,8 @@ Usage: #example
 * requester = Reference(ExampleKenyaCorePractitioner)
 * recipient = Reference(ExampleKenyaCorePractitioner)
 * reasonCode.coding.system = "http://snomed.info/sct"
-* reasonCode.coding.code = #438451000124107
-* reasonCode.coding.display = "Notification of laboratory test result"
+* reasonCode.coding.code = #386472008
+* reasonCode.coding.display = "Telephone consultation"
 
 
 // ============================================================
@@ -412,9 +412,9 @@ Usage: #example
 * type.coding.system = "http://loinc.org"
 * type.coding.code = #11502-2
 * type.coding.display = "Laboratory report"
-* category.coding.system = "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"
-* category.coding.code = #clinical-note
-* category.coding.display = "Clinical Note"
+* category.coding.system = "http://loinc.org"
+* category.coding.code = #26436-6
+* category.coding.display = "Laboratory studies (set)"
 * subject = Reference(ExampleKenyaCorePatient)
 * date = "2026-08-03T10:00:00+03:00"
 * author = Reference(ExampleKenyaCorePractitioner)
@@ -449,8 +449,8 @@ Usage: #example
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
 * code.coding.system = "http://snomed.info/sct"
-* code.coding.code = #91936005
-* code.coding.display = "Penicillin allergy"
+* code.coding.code = #764146007
+* code.coding.display = "Penicillin"
 * patient = Reference(ExampleKenyaCorePatient)
 * reaction.manifestation.coding.system = "http://snomed.info/sct"
 * reaction.manifestation.coding.code = #271807003
@@ -468,8 +468,8 @@ Usage: #example
 * code.coding.code = #3A00
 * code.coding.display = "Iron deficiency anaemia"
 * subject = Reference(ExampleKenyaCorePatient)
-* clinicalStatus = ConditionClinicalStatusCS#active "Active"
-* verificationStatus = ConditionVerificationStatusCS#confirmed "Confirmed"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 * category = ConditionCategoryCS#ENCOUNTER-DIAGNOSIS "Encounter Diagnosis"
 * encounter = Reference(ExampleKenyaCoreEncounter)
 * onsetDateTime = "2026-08-01"
@@ -529,8 +529,8 @@ Usage: #example
 * meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-procedure"
 * status = #completed
 * code.coding.system = "http://snomed.info/sct"
-* code.coding.code = #28191000
-* code.coding.display = "Venepuncture"
+* code.coding.code = #28520004
+* code.coding.display = "Venipuncture for blood test"
 * subject = Reference(ExampleKenyaCorePatient)
 * encounter = Reference(ExampleKenyaCoreEncounter)
 * performedDateTime = "2026-08-01T09:05:00+03:00"
