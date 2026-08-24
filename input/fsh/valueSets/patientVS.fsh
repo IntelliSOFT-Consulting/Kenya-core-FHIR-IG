@@ -23,7 +23,7 @@ Description: "Episode of Care Status Value Set"
 * ^url = "https://fhir.dha.go.ke/ig/core/ValueSet/episode-of-care-status-vs"
 * ^status = #active
 * ^experimental = false
-* include codes from system EpisodeOfCareStatusCS
+* include codes from system http://hl7.org/fhir/episode-of-care-status
 
 ValueSet: EpisodeOfCareTypeVS
 Id: episode-of-care-type-vs
@@ -50,7 +50,8 @@ Description:  "Encounter Status Value Set"
 * ^url = "https://fhir.dha.go.ke/ig/core/ValueSet/encounter-status-vs"
 * ^status = #active
 * ^experimental = false
-* include codes from system EncounterStatusCS
+* http://hl7.org/fhir/encounter-status#in-progress "In Progress"
+* http://hl7.org/fhir/encounter-status#finished "Finished"
 
 ValueSet: EncounterTypeVS
 Id: encounter-type-vs
