@@ -7,7 +7,7 @@ Description: "Kenya Core profile for Provenance, used to track the origin, autho
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-provenance"
+* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-provenance"
 
 * target 1..* MS
 * target only Reference(Resource)

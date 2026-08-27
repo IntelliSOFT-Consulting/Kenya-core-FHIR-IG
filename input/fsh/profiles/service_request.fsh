@@ -7,7 +7,7 @@ Description: "Kenya Core base profile for a request for a service (lab order, re
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-servicerequest"
+* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-servicerequest"
 
 * insert IdentifierRequiredRule(identifier, 0..*)
 

@@ -7,7 +7,7 @@ Description: "Kenya Core profile for recording a communication that has occurred
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-communication"
+* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-communication"
 
 * insert IdentifierRequiredRule(identifier, 0..*)
 
