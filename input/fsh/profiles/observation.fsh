@@ -7,7 +7,7 @@ Description: "Observation profile for vitals and lab results."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-observation"
+* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-observation"
 * status 1..1 MS
 * category 1..* MS
 * code 1..1 MS

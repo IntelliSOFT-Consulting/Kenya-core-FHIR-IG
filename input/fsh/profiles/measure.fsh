@@ -7,7 +7,7 @@ Description: "Kenya Core profile for a quality/performance Measure definition, e
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-measure"
+* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-measure"
 
 * url 1..1 MS
 * url ^short = "Canonical identifier for this measure"

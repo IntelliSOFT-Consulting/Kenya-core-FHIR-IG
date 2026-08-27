@@ -13,7 +13,7 @@ in the IPS composition or as a referenced resource."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..1
-* meta.profile = "https://fhir.dha.go.ke/ig/core/StructureDefinition/kenya-core-patient"
+* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-patient"
 * obeys sha-patient-min-identifier
 
 * id 1..1
