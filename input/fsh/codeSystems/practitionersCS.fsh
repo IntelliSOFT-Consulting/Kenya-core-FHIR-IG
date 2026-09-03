@@ -5,7 +5,7 @@ Description: "Kenya License Status Code Systems"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #active "Active" "Active"
 * #inactive "Inactive" "Inactive"
 
@@ -16,7 +16,7 @@ Description: "Kenya Regulatory Body Code System"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false 
+* ^caseSensitive = true 
 * #KENYA-MEDICAL-PRACTITIONERS-AND-DENTISTS-COUNCIL-KMPDC "Kenya Medical Practitioners and Dentists Council (KMPDC)"
 * #NURSING-COUNCIL-OF-KENYA-NCK "Nursing Council of Kenya (NCK)"
 * #CLINICAL-OFFICERS-COUNCIL-COC "Clinical Officers Council (COC)"
@@ -38,7 +38,7 @@ Description: "Practitioner Roles Code System"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false 
+* ^caseSensitive = true 
 * #OCCUPATIONAL-THERAPIST "Occupational therapist"
 * #SOCIAL-WORKER "Social worker"
 * #DOCTOR "Doctor"
@@ -57,7 +57,7 @@ Description: "Practitioner Specialities Code Systems"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false 
+* ^caseSensitive = true 
  
 * #PHYSIOTHERAPIST "Physiotherapist"
 * #PSYCHOLOGIST "Psychologist"
