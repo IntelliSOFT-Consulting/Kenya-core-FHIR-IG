@@ -6,7 +6,7 @@ Description: "Facility Identifier Types Code Systems"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #slade-code "Code" "Slade facility code"
 * #fid "Fid" "Facility ID"
@@ -21,7 +21,7 @@ Description: "Auto-released v20251217120809"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #OSTEOPOROSIS-CLINIC "Osteoporosis Clinic"
 * #ORTHOPAEDIC-OUTREACH-CLINIC "Orthopaedic Outreach Clinic"
@@ -261,7 +261,7 @@ Description: "Facility Level Code Systems"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #LEVEL-2 "Level 2"
 * #LEVEL-3A "Level 3A"
@@ -278,7 +278,7 @@ Description: "Approval Status Code Systems"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #YES "Yes"
 * #NO "No"
@@ -295,7 +295,7 @@ Description: "Location Type Code Systems"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #WARD "Ward"
 * #OUTPATIENT-CLINIC "Outpatient Clinic"

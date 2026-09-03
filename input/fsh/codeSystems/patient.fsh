@@ -6,7 +6,7 @@ Description: "A code system representing country codes."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #ALBANIAN "Albanian"
 * #AFGHAN "Afghan"
@@ -80,7 +80,7 @@ Description: "A code system that defines the status of an episode of care."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false 
+* ^caseSensitive = true 
 * #planned "Planned" "The episode of care is planned."
 * #active "Active" "The episode of care is currently active."
 * #onhold "On Hold" "The episode of care is on hold."
@@ -98,7 +98,7 @@ Description: "A code system that defines types of episodes of care."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #MATERNAL-AND-CHILD-HEALTH-PROGRAM "Maternal and Child Health Program" "The episode of care is a maternal and child health program."
 * #HIV-CARE-AND-TREATMENT-PROGRAM "HIV Care and Treatment Program" "The episode of care is an HIV care and treatment program."
@@ -128,7 +128,7 @@ Description: "A code system that defines relationships for related persons."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #SIBLING "Sibling" "The related person is a sibling of the patient."
 * #ADOPTED-CHILD "Adopted Child" "The related person is an adopted child of the patient."
@@ -145,7 +145,7 @@ Description: "A code system that defines the status of an encounter."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #in-progress "In Progress" "The encounter is currently in progress."
 * #finished "Finished" "The encounter has been finished."
@@ -158,7 +158,7 @@ Description: "A code system that defines types of encounters."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #EMERGENCY-VISIT "Emergency Visit" "The encounter is an emergency visit."
 * #OUTPATIENT-VISIT "Outpatient Visit" "The encounter is an outpatient visit."

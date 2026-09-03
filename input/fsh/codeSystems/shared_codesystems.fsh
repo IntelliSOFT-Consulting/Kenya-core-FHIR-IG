@@ -7599,7 +7599,7 @@ Description: "Codes for the source from which a client was referred (community, 
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #community "Community"
 * #health-provider "Health Provider"
 * #self-referral "Self"

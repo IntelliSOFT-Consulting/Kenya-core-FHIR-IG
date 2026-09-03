@@ -3,7 +3,7 @@ Title: "Condition Category Code System"
 Description: "A code system that defines categories for conditions."
 * ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/ConditionCategoryCS"
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * #PROBLEM-LIST-ITEM "Problem List Item" "Problem List Item"
 * #ENCOUNTER-DIAGNOSIS "Encounter Diagnosis" "Encounter Diagnosis"
@@ -16,7 +16,7 @@ Description: "A code system that defines verification status for conditions."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false 
+* ^caseSensitive = true 
 
 * #unconfirmed "Unconfirmed" "Unconfirmed"
 * #provisional "Provisional" "Provisional"
@@ -32,7 +32,7 @@ Description: "A code system that defines clinical status for conditions."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = false 
+* ^caseSensitive = true 
 
 * #active "Active" "Active"
 * #recurrence "Recurrence" "Recurrence"
