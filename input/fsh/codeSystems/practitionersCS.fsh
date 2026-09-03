@@ -1,6 +1,7 @@
 CodeSystem: KenyaLicenseStatus 
 Title: "Kenya License Status"
 Description: "Kenya License Status Code Systems"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaLicenseStatus"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -11,6 +12,7 @@ Description: "Kenya License Status Code Systems"
 CodeSystem: KenyaRegulatoryBody 
 Title: "Kenya Regulatory Body"
 Description: "Kenya Regulatory Body Code System"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaRegulatoryBody"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -32,6 +34,7 @@ Description: "Kenya Regulatory Body Code System"
 CodeSystem: PractitionerRolesCS
 Title: "Practitioner Roles Code System"
 Description: "Practitioner Roles Code System"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/PractitionerRolesCS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -50,6 +53,7 @@ Description: "Practitioner Roles Code System"
 CodeSystem: PractitionerSpecialtiesCS
 Title: "Practitioner Specialities Code System"
 Description: "Practitioner Specialities Code Systems"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/PractitionerSpecialtiesCS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false

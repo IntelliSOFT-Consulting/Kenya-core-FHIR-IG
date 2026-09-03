@@ -2,6 +2,7 @@
 CodeSystem: FacilityIdentifierTypesCS 
 Title: "Facility Identifier Types" 
 Description: "Facility Identifier Types Code Systems"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/FacilityIdentifierTypesCS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -14,7 +15,8 @@ Description: "Facility Identifier Types Code Systems"
 
 CodeSystem: OrganizationTypeCS 
 Title: "Organisation Type"
-Description: "Auto-released v20251217120809" 
+Description: "Auto-released v20251217120809"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/OrganizationTypeCS"
 * ^version = "v20251217120809"
 * ^status = #active
 * ^content = #complete
@@ -255,6 +257,7 @@ Description: "Auto-released v20251217120809"
 CodeSystem: FacilityLevelCS 
 Title: "Facility Level"
 Description: "Facility Level Code Systems"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/FacilityLevelCS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -271,6 +274,7 @@ Description: "Facility Level Code Systems"
 CodeSystem: ApprovalStatusCS 
 Title: "Approval Status"
 Description: "Approval Status Code Systems"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/ApprovalStatusCS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -287,6 +291,7 @@ Description: "Approval Status Code Systems"
 CodeSystem: LocationTypeCS 
 Title: "Location Type" 
 Description: "Location Type Code Systems"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/LocationTypeCS"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false

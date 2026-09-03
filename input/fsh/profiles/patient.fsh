@@ -23,7 +23,7 @@ in the IPS composition or as a referenced resource."
 * identifier 1..* MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #closed
+* identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice identifiers by system"
 * identifier contains
     shaNumber 0..1 and
