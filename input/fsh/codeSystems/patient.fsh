@@ -2,6 +2,7 @@ CodeSystem: CountryCodesCS
 Id: countries
 Title: "Country Codes"
 Description: "A code system representing country codes."
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/countries"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -74,7 +75,8 @@ Description: "A code system representing country codes."
 CodeSystem: EpisodeOfCareStatusCS
 Id: episode-of-care-status-cs
 Title: "Episode of Care Status Code System"
-Description: "A code system that defines the status of an episode of care." 
+Description: "A code system that defines the status of an episode of care."
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/episode-of-care-status-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -91,7 +93,8 @@ Description: "A code system that defines the status of an episode of care."
 CodeSystem: EpisodeOfCareTypeCS
 Id: episode-of-care-type-cs
 Title: "Episode of Care Type Code System"
-Description: "A code system that defines types of episodes of care."     
+Description: "A code system that defines types of episodes of care."
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/episode-of-care-type-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -120,7 +123,8 @@ Description: "A code system that defines types of episodes of care."
 CodeSystem: RelatedPersonRelationshipCS
 Id: related-person-relationship-cs
 Title: "Related Person Relationship Code System"
-Description: "A code system that defines relationships for related persons." 
+Description: "A code system that defines relationships for related persons."
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/related-person-relationship-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -136,7 +140,8 @@ Description: "A code system that defines relationships for related persons."
 CodeSystem: EncounterStatusCS
 Id: encounter-status-cs
 Title: "Encounter Status Code System"
-Description: "A code system that defines the status of an encounter." 
+Description: "A code system that defines the status of an encounter."
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/encounter-status-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -148,7 +153,8 @@ Description: "A code system that defines the status of an encounter."
 CodeSystem: EncounterTypeCS
 Id: encounter-type-cs
 Title: "Encounter Type Code System"
-Description: "A code system that defines types of encounters." 
+Description: "A code system that defines types of encounters."
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/encounter-type-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
