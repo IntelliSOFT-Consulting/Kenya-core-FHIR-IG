@@ -2,8 +2,7 @@ Profile:  KenyaCorePractitioner
 Parent:   Practitioner
 Id:       practitioner-sha-ke
 Title:    "KenyaCore Practitioner Profile"
-Description: "Practitioner profile for Kenya healthcare providers" 
-* ^version = "1.0.0"
+Description: "Practitioner profile for Kenya healthcare providers"
 * ^status = #active
 * ^date = "2025-12-15"
 

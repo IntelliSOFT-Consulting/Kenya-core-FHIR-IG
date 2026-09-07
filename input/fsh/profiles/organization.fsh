@@ -3,7 +3,6 @@ Parent: Organization
 Id: kenya-core-organization
 Title: "KenyaCore Organization Profile"
 Description: "Organization representing healthcare provider facilities in Kenya."
-* ^version = "1.0.0"
 * ^status = #active
 
 * id 1..1 MS
