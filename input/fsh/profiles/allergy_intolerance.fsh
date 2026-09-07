@@ -9,7 +9,9 @@ Description: "Allergy or intolerance record."
 * meta.profile 1..*
 * meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-allergyintolerance"
 * clinicalStatus 1..1 MS
+* clinicalStatus from ConditionClinicalStatusVS
 * verificationStatus 1..1 MS
+* verificationStatus from ConditionVerificationStatusVS
 * code 1..1 MS
 * code from http://hl7.org/fhir/ValueSet/substance-code
 * patient 1..1 MS

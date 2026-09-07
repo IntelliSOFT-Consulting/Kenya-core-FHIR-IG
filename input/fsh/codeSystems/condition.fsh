@@ -1,7 +1,10 @@
 CodeSystem: ConditionCategoryCS
+Id: condition-category-cs
 Title: "Condition Category Code System"
 Description: "A code system that defines categories for conditions."
-* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/ConditionCategoryCS"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/condition-category-cs"
+* ^status = #active
+* ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -10,33 +13,31 @@ Description: "A code system that defines categories for conditions."
 * #HEALTH-CONCERN "Health Concern" "Health Concern"
  
 CodeSystem: ConditionVerificationStatusCS
+Id: condition-verification-status-cs
 Title: "Condition Verification Status Code System"
 Description: "A code system that defines verification status for conditions."
-* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/ConditionVerificationStatusCS"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/condition-verification-status-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = true 
+* ^caseSensitive = true
 
-* #unconfirmed "Unconfirmed" "Unconfirmed"
-* #provisional "Provisional" "Provisional"
-* #differential "Differential" "Differential"
-* #confirmed "Confirmed" "Confirmed"
-* #refuted "Refuted" "Refuted"
-* #entered-in-error "Entered in Error" "Entered in Error"
+* #UNCONFIRMED "Unconfirmed" "Unconfirmed"
+* #DIFFERENTIAL "Differential" "Differential"
+* #CONFIRMED "Confirmed" "Confirmed"
+* #REFUTED "Refuted" "Refuted"
+* #ENTERED-IN-ERROR "Entered-in-Error" "Entered-in-Error"
  
 CodeSystem: ConditionClinicalStatusCS
+Id: condition-clinical-status-cs
 Title: "Condition Clinical Status Code System"
 Description: "A code system that defines clinical status for conditions."
-* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/ConditionClinicalStatusCS"
+* ^url = "https://fhir.dha.go.ke/terminology/CodeSystem/condition-clinical-status-cs"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
-* ^caseSensitive = true 
+* ^caseSensitive = true
 
-* #active "Active" "Active"
-* #recurrence "Recurrence" "Recurrence"
-* #relapse "Relapse" "Relapse"
-* #inactive "Inactive" "Inactive"
-* #remission "Remission" "Remission"
-* #resolved "Resolved" "Resolved"
+* #ACTIVE "Active" "Active"
+* #RESOLVED "Resolved" "Resolved"
+* #INACTIVE "Inactive" "Inactive"

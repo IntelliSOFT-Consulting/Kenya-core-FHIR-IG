@@ -446,8 +446,8 @@ Description: "Example allergy record for Amina Hassan."
 Usage: #example
 * id = "example-allergyintolerance-amina-penicillin"
 * meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-allergyintolerance"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
-* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
+* clinicalStatus = ConditionClinicalStatusCS#ACTIVE "Active"
+* verificationStatus = ConditionVerificationStatusCS#CONFIRMED "Confirmed"
 * code.coding.system = "http://snomed.info/sct"
 * code.coding.code = #764146007
 * code.coding.display = "Penicillin"
@@ -468,8 +468,8 @@ Usage: #example
 * code.coding.code = #3A00
 * code.coding.display = "Iron deficiency anaemia"
 * subject = Reference(ExampleKenyaCorePatient)
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
+* clinicalStatus = ConditionClinicalStatusCS#ACTIVE "Active"
+* verificationStatus = ConditionVerificationStatusCS#CONFIRMED "Confirmed"
 * category = ConditionCategoryCS#ENCOUNTER-DIAGNOSIS "Encounter Diagnosis"
 * encounter = Reference(ExampleKenyaCoreEncounter)
 * onsetDateTime = "2026-08-01"

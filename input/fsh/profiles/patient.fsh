@@ -5,8 +5,7 @@ Title: "KenyaCore Patient Profile"
 Description: "This profile represents the constraints applied to the Patient resource 
 based on the International Patient Summary (IPS) FHIR Implementation Guide. 
 It describes the minimum expectations for the Patient resource when used 
-in the IPS composition or as a referenced resource." 
-* ^version = "1.0.0"
+in the IPS composition or as a referenced resource."
 * ^status = #active
 * ^date = "2025-12-15"
 
