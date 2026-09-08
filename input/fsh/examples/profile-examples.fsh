@@ -448,13 +448,15 @@ Usage: #example
 * meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/kenya-core-allergyintolerance"
 * clinicalStatus = ConditionClinicalStatusCS#ACTIVE "Active"
 * verificationStatus = ConditionVerificationStatusCS#CONFIRMED "Confirmed"
-* code.coding.system = "http://snomed.info/sct"
-* code.coding.code = #764146007
-* code.coding.display = "Penicillin"
+* type = #allergy
+* category = #medication
+* criticality = #high
+* code = ActiveComponentsCS#AC11678 "Penicillin G"
 * patient = Reference(ExampleKenyaCorePatient)
-* reaction.manifestation.coding.system = "http://snomed.info/sct"
-* reaction.manifestation.coding.code = #271807003
-* reaction.manifestation.coding.display = "Skin rash"
+* recordedDate = "2018-03-10"
+* reaction.substance = ActiveComponentsCS#AC11678 "Penicillin G"
+* reaction.manifestation = ManifestationCS#RASH "Rash"
+* reaction.severity = #moderate
 * onsetDateTime = "2018-03-10"
 
 Instance: ExampleKenyaCoreCondition
